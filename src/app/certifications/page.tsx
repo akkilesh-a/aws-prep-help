@@ -10,6 +10,8 @@ import {
 import { getCertifications } from "@/lib";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const CertificationsPage = async () => {
   const certifications = await getCertifications();
@@ -20,7 +22,7 @@ const CertificationsPage = async () => {
 
   return (
     <div className="space-y-4">
-      <H1>Certifications</H1>
+      <H1>CERTIFICATIONS</H1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {certifications.map((certification) => (
           <CertificationCard
@@ -45,6 +47,9 @@ const CertificationCard = ({
   quizes: number;
 }) => {
   const imgURL = "/certifications/" + logo;
+  const regex = / /g;
+  const quizURL = `/${name.toLowerCase().replace(regex, "-")}/quizzes`;
+
   return (
     <div>
       <Card>
@@ -62,7 +67,12 @@ const CertificationCard = ({
         </CardContent>
         <CardFooter className="flex justify-between">
           <P>Quizes: {quizes.toString()}</P>
-          <Button>View Quizes</Button>
+          <Button asChild>
+            <Link href={quizURL}>
+              View Quizes
+              <ArrowRight />
+            </Link>
+          </Button>
         </CardFooter>
       </Card>
     </div>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { ModeToggle } from "../theme";
@@ -22,9 +21,9 @@ const navItems = [
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center p-2 border-b sticky top-0 bg-background z-10">
-      <div className="flex items-center">
+      <Link href="/" className="flex items-center">
         <H3>AWS Prep Help</H3>
-      </div>
+      </Link>
       <div className="flex items-center gap-2">
         <div className="flex items-center">
           {navItems.map((item) => (
