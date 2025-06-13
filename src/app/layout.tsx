@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Red_Hat_Mono } from "next/font/google";
+import { Navbar } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "AWS Prep Help",
@@ -29,7 +30,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Navbar />
+          <div className="px-4 py-8 max-w-7xl mx-auto">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
