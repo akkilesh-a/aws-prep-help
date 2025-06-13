@@ -9,7 +9,6 @@ import {
   Loader,
 } from "@/components/ui";
 import { Question } from "@/types";
-import { Check, X } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import { Options } from "./options";
 import { SelectedOptions } from "./types";
