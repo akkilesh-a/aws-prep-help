@@ -1,0 +1,558 @@
+[
+  {
+    "question": "Which AWS offering enables customers to find, buy, and immediately start using software solutions in their AWS environment?",
+    "options": [
+      "AWS Config",
+      "AWS OpsWorks",
+      "AWS SDK",
+      "AWS Marketplace"
+    ],
+    "correctAnswer": "AWS Marketplace"
+  },
+  {
+    "question": "Which AWS networking service enables a company to create a virtual network within AWS?",
+    "options": [
+      "AWS Config",
+      "Amazon Route 53",
+      "AWS Direct Connect",
+      "Amazon Virtual Private Cloud (Amazon VPC)"
+    ],
+    "correctAnswer": "Amazon Virtual Private Cloud (Amazon VPC)"
+  },
+  {
+    "question": "Which of the following is AWS's responsibility under the AWS shared responsibility model?",
+    "options": [
+      "Configuring third-party applications",
+      "Maintaining physical hardware",
+      "Securing application access and data",
+      "Managing custom Amazon Machine Images (AMIs)"
+    ],
+    "correctAnswer": "Maintaining physical hardware"
+  },
+  {
+    "question": "Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?",
+    "options": [
+      "AWS Regions",
+      "AWS edge locations",
+      "AWS Availability Zones",
+      "Amazon Virtual Private Cloud (Amazon VPC)"
+    ],
+    "correctAnswer": "AWS edge locations"
+  },
+  {
+    "question": "How would a system administrator add an additional layer of login security to a user's AWS Management Console?",
+    "options": [
+      "Use AWS Cloud Directory",
+      "Audit AWS Identity and Access Management (IAM) roles",
+      "Enable Multi-Factor Authentication",
+      "Enable AWS CloudTrail"
+    ],
+    "correctAnswer": "Enable Multi-Factor Authentication"
+  },
+  {
+    "question": "Which service can identify the user that made the API call when an Amazon Elastic Compute Cloud (Amazon EC2) instance is terminated?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS X-Ray",
+      "AWS Identity and Access Management (AWS IAM)"
+    ],
+    "correctAnswer": "AWS CloudTrail"
+  },
+  {
+    "question": "Which service would you use to send alerts based on Amazon CloudWatch alarms?",
+    "options": [
+      "Amazon Simple Notification Service (Amazon SNS)",
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": "Amazon Simple Notification Service (Amazon SNS)"
+  },
+  {
+    "question": "Where can a customer find information about prohibited actions on AWS infrastructure?",
+    "options": [
+      "AWS Trusted Advisor",
+      "AWS Identity and Access Management (IAM)",
+      "AWS Billing Console",
+      "AWS Acceptable Use Policy"
+    ],
+    "correctAnswer": "AWS Acceptable Use Policy"
+  },
+  {
+    "question": "Which of the following is an example of how moving to the AWS Cloud reduces upfront cost?",
+    "options": [
+      "By replacing large variable costs with lower capital investments",
+      "By replacing large capital investments with lower variable costs",
+      "By allowing the provisioning of compute and storage at a fixed level to meet peak demand",
+      "By replacing the repeated scaling of virtual servers with a simpler fixed-scale model"
+    ],
+    "correctAnswer": "By replacing large capital investments with lower variable costs"
+  },
+  {
+    "question": "When designing a typical three-tier web application, which AWS services and/or features improve availability and reduce the impact failures? (Choose two.)",
+    "options": [
+      "AWS Auto Scaling for Amazon EC2 instances",
+      "Amazon VPC subnet ACLs to check the health of a service",
+      "Distributed resources across multiple Availability Zones",
+      "AWS Server Migration Service (AWS SMS) to move Amazon EC2 instances into a different Region",
+      "Distributed resources across multiple AWS points of presence"
+    ],
+    "correctAnswer": [
+      "AWS Auto Scaling for Amazon EC2 instances",
+      "Distributed resources across multiple Availability Zones"
+    ]
+  },
+  {
+    "question": "Which cloud design principle aligns with AWS Cloud best practices?",
+    "options": [
+      "Create fixed dependencies among application components",
+      "Aggregate services on a single instance",
+      "Deploy applications in a single Availability Zone",
+      "Distribute the compute load across multiple resources"
+    ],
+    "correctAnswer": "Distribute the compute load across multiple resources"
+  },
+  {
+    "question": "Which of the following are recommended practices for managing IAM users? (Choose two.)",
+    "options": [
+      "Require IAM users to change their passwords after a specified period of time",
+      "Prevent IAM users from reusing previous passwords",
+      "Recommend that the same password be used on AWS and other sites",
+      "Require IAM users to store their passwords in raw text",
+      "Disable multi-factor authentication (MFA) for IAM users"
+    ],
+    "correctAnswer": [
+      "Require IAM users to change their passwords after a specified period of time",
+      "Prevent IAM users from reusing previous passwords"
+    ]
+  },
+  {
+    "question": "A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. How can the company get this support? (Choose two.)",
+    "options": [
+      "Ask for a quote from the AWS Marketplace team to perform a migration into the company's AWS account.",
+      "Contact AWS Support and open a case for assistance",
+      "Use AWS Professional Services to provide guidance and to set up an AWS Landing Zone in the company's AWS account",
+      "Select a partner from the AWS Partner Network (APN) to assist with the migration",
+      "Use Amazon Connect to create a new request for proposal (RFP) for expert assistance in migrating to the AWS Cloud."
+    ],
+    "correctAnswer": [
+      "Use AWS Professional Services to provide guidance and to set up an AWS Landing Zone in the company's AWS account",
+      "Select a partner from the AWS Partner Network (APN) to assist with the migration"
+    ]
+  },
+  {
+    "question": "How does the AWS Enterprise Support Concierge team help users?",
+    "options": [
+      "Supporting application development",
+      "Providing architecture guidance",
+      "Answering billing and account inquires",
+      "Answering questions regarding technical support cases"
+    ],
+    "correctAnswer": "Answering billing and account inquires"
+  },
+  {
+    "question": "An application designed to span multiple Availability Zones is described as:",
+    "options": [
+      "being highly available",
+      "having global reach",
+      "using an economy of scale",
+      "having elasticity"
+    ],
+    "correctAnswer": "being highly available"
+  },
+  {
+    "question": "A new service using AWS must be highly available. Yet, due to regulatory requirements, all of its Amazon EC2 instances must be located in a single geographic area. According to best practices, to meet these requirements, the EC2 instances must be placed in at least two:",
+    "options": [
+      "AWS Regions",
+      "Availability Zones",
+      "subnets",
+      "placement groups"
+    ],
+    "correctAnswer": "Availability Zones"
+  },
+  {
+    "question": "Which AWS tool is used to compare the cost of running an application on-premises to running the application in the AWS Cloud?",
+    "options": [
+      "AWS Trusted Advisor",
+      "AWS Simple Monthly Calculator",
+      "AWS Pricing Calculator",
+      "Cost Explorer"
+    ],
+    "correctAnswer": "AWS Pricing Calculator"
+  },
+  {
+    "question": "A company has multiple AWS accounts within AWS Organizations and wants to apply the Amazon EC2 Reserved Instances benefit to a single account only. Which action should be taken?",
+    "options": [
+      "Purchase the Reserved Instances from master payer account and turn off Reserved Instance sharing.",
+      "Enable billing alerts in the AWS Billing and Cost Management console.",
+      "Purchase the Reserved Instances in individual linked accounts and turn off Reserved Instance sharing from the payer level.",
+      "Enable Reserved Instance sharing in the AWS Billing and Cost Management console."
+    ],
+    "correctAnswer": "Purchase the Reserved Instances from master payer account and turn off Reserved Instance sharing."
+  },
+  {
+    "question": "Which situation should be reported to the AWS Abuse team?",
+    "options": [
+      "In Availability Zone has a service disruption",
+      "An intrusion attempt is made from an AWS IP address",
+      "A user has trouble accessing an Amazon S3 bucket from an AWS IP address",
+      "A user needs to change payment methods due to a compromise"
+    ],
+    "correctAnswer": "An intrusion attempt is made from an AWS IP address"
+  },
+  {
+    "question": "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
+    "options": [
+      "Application Load Balancer",
+      "AWS Global Accelerator",
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "AWS Lambda"
+    ],
+    "correctAnswer": [
+      "AWS Global Accelerator",
+      "Amazon CloudFront"
+    ]
+  },
+  {
+    "question": "Which AWS service or resource is serverless?",
+    "options": [
+      "AWS Lambda",
+      "Amazon EC2 instances",
+      "Amazon Lightsail",
+      "Amazon ElastiCache"
+    ],
+    "correctAnswer": "AWS Lambda"
+  },
+  {
+    "question": "Which of the following are components of Amazon VPC? (Choose two.)",
+    "options": [
+      "Objects",
+      "Subnets",
+      "Buckets",
+      "Internet gateways",
+      "Access key"
+    ],
+    "correctAnswer": [
+      "Subnets",
+      "Internet gateways"
+    ]
+  },
+  {
+    "question": "AWS Budgets can be used to:",
+    "options": [
+      "prevent a given user from creating a resource",
+      "send an alert when the utilization of Reserved Instances drops below a certain percentage",
+      "set resource limits in AWS accounts to prevent overspending",
+      "split an AWS bill across multiple forms of payment"
+    ],
+    "correctAnswer": "set resource limits in AWS accounts to prevent overspending"
+  },
+  {
+    "question": "Which of the following will enhance the security of access to the AWS Management Console? (Choose two.)",
+    "options": [
+      "AWS Secrets Manager",
+      "AWS Certificate Manager",
+      "AWS Multi-Factor Authentication (AWS MFA)",
+      "Security groups",
+      "Password policies"
+    ],
+    "correctAnswer": [
+      "AWS Multi-Factor Authentication (AWS MFA)",
+      "Password policies"
+    ]
+  },
+  {
+    "question": "The AWS Trusted Advisor checks include recommendations regarding which of the following? (Choose two.)",
+    "options": [
+      "Information on Amazon S3 bucket permissions",
+      "AWS service outages",
+      "Multi-factor authentication enabled on the AWS account root user",
+      "Available software patches",
+      "Number of users in the account"
+    ],
+    "correctAnswer": [
+      "Information on Amazon S3 bucket permissions",
+      "Multi-factor authentication enabled on the AWS account root user"
+    ]
+  },
+  {
+    "question": "Which functions can users perform using AWS KMS?",
+    "options": [
+      "Create and manage AWS access keys for the AWS account root user",
+      "Create and manage AWS access keys for an AWS account IAM user",
+      "Create and manage keys for encryption and decryption of data",
+      "Create and manage keys for multi-factor authentication"
+    ],
+    "correctAnswer": "Create and manage keys for encryption and decryption of data"
+  },
+  {
+    "question": "How does AWS Trusted Advisor provide guidance to users of the AWS Cloud? (Choose two.)",
+    "options": [
+      "It identifies software vulnerabilities in applications running on AWS",
+      "It provides a list of cost optimization recommendations based on current AWS usage",
+      "It detects potential security vulnerabilities caused by permissions settings on account resources",
+      "It automatically corrects potential security issues caused by permissions settings on account resources",
+      "It provides proactive alerting whenever an Amazon EC2 instance has been compromised"
+    ],
+    "correctAnswer": [
+      "It provides a list of cost optimization recommendations based on current AWS usage",
+      "It detects potential security vulnerabilities caused by permissions settings on account resources"
+    ]
+  },
+  {
+    "question": "Which of the following are advantages of the AWS Cloud? (Choose two.)",
+    "options": [
+      "AWS manages the maintenance of the cloud infrastructure",
+      "AWS manages the security of applications built on AWS",
+      "AWS manages capacity planning for physical servers",
+      "AWS manages the development of applications on AWS",
+      "AWS manages cost planning for virtual servers"
+    ],
+    "correctAnswer": [
+      "AWS manages the maintenance of the cloud infrastructure",
+      "AWS manages capacity planning for physical servers"
+    ]
+  },
+  {
+    "question": "A user deploys an Amazon RDS DB instance in multiple Availability Zones. This strategy involves which pillar of the AWS Well-Architected Framework?",
+    "options": [
+      "Performance efficiency",
+      "Reliability",
+      "Cost optimization",
+      "Security"
+    ],
+    "correctAnswer": "Reliability"
+  },
+  {
+    "question": "Which AWS services provide a user with connectivity between the AWS Cloud and on-premises resources? (Choose two.)",
+    "options": [
+      "AWS VPN",
+      "Amazon Connect",
+      "Amazon Cognito",
+      "AWS Direct Connect",
+      "AWS Managed Services"
+    ],
+    "correctAnswer": [
+      "AWS VPN",
+      "AWS Direct Connect"
+    ]
+  },
+  {
+    "question": "Which AWS service is used to pay AWS bills, and monitor usage and budget costs?",
+    "options": [
+      "AWS Billing and Cost Management",
+      "Consolidated billing",
+      "Amazon CloudWatch",
+      "Amazon QuickSight"
+    ],
+    "correctAnswer": "AWS Billing and Cost Management"
+  },
+  {
+    "question": "Which element of the AWS global infrastructure consists of one or more discrete data centers, each with redundant power, networking, and connectivity, which are housed in separate facilities?",
+    "options": [
+      "AWS Regions",
+      "Availability Zones",
+      "Edge locations",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": "Availability Zones"
+  },
+  {
+    "question": "Which Amazon VPC feature enables users to capture information about the IP traffic that reaches Amazon EC2 instances?",
+    "options": [
+      "Security groups",
+      "Elastic network interfaces",
+      "Network ACLs",
+      "VPC Flow Logs"
+    ],
+    "correctAnswer": "VPC Flow Logs"
+  },
+  {
+    "question": "Which AWS service can be used to automatically scale an application up and down without making capacity planning decisions?",
+    "options": [
+      "Amazon AutoScaling",
+      "Amazon Redshift",
+      "AWS CloudTrail",
+      "AWS Lambda"
+    ],
+    "correctAnswer": "Amazon AutoScaling"
+  },
+  {
+    "question": "AWS Enterprise Support users have access to which service or feature that is not available to users with other AWS Support plans?",
+    "options": [
+      "AWS Trusted Advisor",
+      "AWS Support case",
+      "Concierge team",
+      "Amazon Connect"
+    ],
+    "correctAnswer": "Concierge team"
+  },
+  {
+    "question": "A company wants to migrate a MySQL database to AWS but does not have the budget for Database Administrators to handle routine tasks including provisioning, patching, and performing backups. Which AWS service will support this use case?",
+    "options": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon DocumentDB",
+      "Amazon ElastiCache"
+    ],
+    "correctAnswer": "Amazon RDS"
+  },
+  {
+    "question": "A company wants to expand from one AWS Region into a second AWS Region. What does the company need to do to start supporting the new Region?",
+    "options": [
+      "Contact an AWS Account Manager to sign a new contract",
+      "Move an Availability Zone to the new Region",
+      "Begin deploying resources in the second Region",
+      "Download the AWS Management Console for the new Region"
+    ],
+    "correctAnswer": "Begin deploying resources in the second Region"
+  },
+  {
+    "question": "A user must meet compliance and software licensing requirements that state a workload must be hosted on a physical server. Which Amazon EC2 instance pricing option will meet these requirements?",
+    "options": [
+      "Dedicated Hosts",
+      "Dedicated Instances",
+      "Spot Instances",
+      "Reserved Instances"
+    ],
+    "correctAnswer": "Dedicated Hosts"
+  },
+  {
+    "question": "Which AWS service will provide a way to generate encryption keys that can be used to encrypt data? (Choose two.)",
+    "options": [
+      "Amazon Macie",
+      "AWS Certificate Manager",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Secrets Manager",
+      "AWS CloudHSM"
+    ],
+    "correctAnswer": [
+      "AWS Key Management Service (AWS KMS)",
+      "AWS CloudHSM"
+    ]
+  },
+  {
+    "question": "A company is planning to migrate from on-premises to the AWS Cloud. Which AWS tool or service provides detailed reports on estimated cost savings after migration?",
+    "options": [
+      "AWS Total Cost of Ownership (TCO) Calculator",
+      "Cost Explorer",
+      "AWS Budgets",
+      "AWS Migration Hub"
+    ],
+    "correctAnswer": "AWS Total Cost of Ownership (TCO) Calculator"
+  },
+  {
+    "question": "What can assist in evaluating an application for migration to the cloud? (Choose two.)",
+    "options": [
+      "AWS Trusted Advisor",
+      "AWS Professional Services",
+      "AWS Systems Manager",
+      "AWS Partner Network (APN)",
+      "AWS Secrets Manager"
+    ],
+    "correctAnswer": [
+      "AWS Professional Services",
+      "AWS Partner Network (APN)"
+    ]
+  },
+  {
+    "question": "Which AWS service helps users meet contractual and regulatory compliance requirements for data security by using dedicated hardware appliances within the AWS Cloud?",
+    "options": [
+      "AWS Secrets Manager",
+      "AWS CloudHSM",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Directory Service"
+    ],
+    "correctAnswer": "AWS CloudHSM"
+  },
+  {
+    "question": "Under the AWS shared responsibility model, the customer manages which of the following? (Choose two.)",
+    "options": [
+      "Decommissioning of physical storage devices",
+      "Security group and ACL configuration",
+      "Patch management of an Amazon RDS instance operating system",
+      "Controlling physical access to data centers",
+      "Patch management of an Amazon EC2 instance operating system"
+    ],
+    "correctAnswer": [
+      "Security group and ACL configuration",
+      "Patch management of an Amazon EC2 instance operating system"
+    ]
+  },
+  {
+    "question": "Which AWS service is suitable for an event-driven workload?",
+    "options": [
+      "Amazon EC2",
+      "AWS Elastic Beanstalk",
+      "AWS Lambda",
+      "Amazon Lumberyard"
+    ],
+    "correctAnswer": "AWS Lambda"
+  },
+  {
+    "question": "What is a value proposition of the AWS Cloud?",
+    "options": [
+      "AWS is responsible for security in the AWS Cloud",
+      "No long-term contract is required",
+      "Provision new servers in days",
+      "AWS manages user applications in the AWS Cloud"
+    ],
+    "correctAnswer": "No long-term contract is required"
+  },
+  {
+    "question": "What is a characteristic of Amazon S3 cross-region replication?",
+    "options": [
+      "Both source and destination S3 buckets must have versioning disabled",
+      "The source and destination S3 buckets cannot be in different AWS Regions",
+      "S3 buckets configured for cross-region replication can be owned by a single AWS account or by different accounts",
+      "The source S3 bucket owner must have the source and destination AWS Regions disabled for their account"
+    ],
+    "correctAnswer": "S3 buckets configured for cross-region replication can be owned by a single AWS account or by different accounts"
+  },
+  {
+    "question": "What is a user responsible for when running an application in the AWS Cloud?",
+    "options": [
+      "Managing physical hardware",
+      "Updating the underlying hypervisor",
+      "Providing a list of users approved for data center access",
+      "Managing application software updates"
+    ],
+    "correctAnswer": "Managing application software updates"
+  },
+  {
+    "question": "A company that does business online needs to quickly deliver new functionality in an iterative manner, minimizing the time to market. Which AWS Cloud feature can provide this?",
+    "options": [
+      "Elasticity",
+      "High availability",
+      "Agility",
+      "Reliability"
+    ],
+    "correctAnswer": "Agility"
+  },
+  {
+    "question": "Which features or services can be used to monitor costs and expenses for an AWS account? (Choose two.)",
+    "options": [
+      "AWS Cost and Usage report",
+      "AWS product pages",
+      "AWS Simple Monthly Calculator",
+      "Billing alerts and Amazon CloudWatch alarms",
+      "AWS Price List API"
+    ],
+    "correctAnswer": [
+      "AWS Cost and Usage report",
+      "Billing alerts and Amazon CloudWatch alarms"
+    ]
+  },
+  {
+    "question": "Amazon Route 53 enables users to:",
+    "options": [
+      "encrypt data in transit",
+      "register DNS domain names",
+      "generate and manage SSL certificates",
+      "establish a dedicated network connection to AWS"
+    ],
+    "correctAnswer": "register DNS domain names"
+  }
+]

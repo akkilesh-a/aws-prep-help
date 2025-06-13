@@ -1,0 +1,518 @@
+[
+  {
+    "question": "Under the AWS shared responsibility model, which of the following is an example of security in the AWS Cloud?",
+    "options": [
+      "Managing edge locations",
+      "Physical security",
+      "Firewall configuration",
+      "Global infrastructure"
+    ],
+    "correctAnswer": "Firewall configuration"
+  },
+  {
+    "question": "How can an AWS user with an AWS Basic Support plan obtain technical assistance from AWS?",
+    "options": [
+      "AWS Senior Support Engineers",
+      "AWS Technical Account Managers",
+      "AWS Trusted Advisor",
+      "AWS Discussion Forums"
+    ],
+    "correctAnswer": "AWS Discussion Forums"
+  },
+  {
+    "question": "Which of the following are pillars of the AWS Well-Architected Framework? (Choose two.)",
+    "options": [
+      "Multiple Availability Zones",
+      "Performance efficiency",
+      "Security",
+      "Encryption usage",
+      "High availability"
+    ],
+    "correctAnswer": [
+      "Performance efficiency",
+      "Security"
+    ]
+  },
+  {
+    "question": "After selecting an Amazon EC2 Dedicated Host reservation, which pricing option would provide the largest discount?",
+    "options": [
+      "No upfront payment",
+      "Hourly on-demand payment",
+      "Partial upfront payment",
+      "All upfront payment"
+    ],
+    "correctAnswer": "All upfront payment"
+  },
+  {
+    "question": "What is an advantage of deploying an application across multiple Availability Zones?",
+    "options": [
+      "There is a lower risk of service failure if a natural disaster causes a service disruption in a given AWS Region.",
+      "The application will have higher availability because it can withstand a service disruption in one Availability Zone.",
+      "There will be better coverage as Availability Zones are geographically distant and can serve a wider area.",
+      "There will be decreased application latency that will improve the user experience."
+    ],
+    "correctAnswer": "The application will have higher availability because it can withstand a service disruption in one Availability Zone."
+  },
+  {
+    "question": "A Cloud Practitioner is asked how to estimate the cost of using a new application on AWS. What is the MOST appropriate response?",
+    "options": [
+      "Inform the user that AWS pricing allows for on-demand pricing.",
+      "Direct the user to the AWS Simple Monthly Calculator for an estimate.",
+      "Use Amazon QuickSight to analyze current spending on-premises.",
+      "Use Amazon AppStream 2.0 for real-time pricing analytics."
+    ],
+    "correctAnswer": "Direct the user to the AWS Simple Monthly Calculator for an estimate."
+  },
+  {
+    "question": "A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. What combination of actions will enable the company to accomplish this goal? (Choose two.)",
+    "options": [
+      "Use the AWS Service Catalog to identify a list of on-premises resources that can be migrated.",
+      "Build a VPN connection between an on-premises device and a virtual private gateway in the new VPC.",
+      "Use Amazon Athena to query data from the on-premises database servers.",
+      "Connect the company's on-premises data center to AWS using AWS Direct Connect.",
+      "Leverage Amazon CloudFront to restrict access to static web content provided through the company's on-premises web servers."
+    ],
+    "correctAnswer": [
+      "Build a VPN connection between an on-premises device and a virtual private gateway in the new VPC.",
+      "Connect the company's on-premises data center to AWS using AWS Direct Connect."
+    ]
+  },
+  {
+    "question": "A web application running on AWS has been spammed with malicious requests from a recurring set of IP addresses. Which AWS service can help secure the application and block the malicious traffic?",
+    "options": [
+      "AWS IAM",
+      "Amazon GuardDuty",
+      "Amazon Simple Notification Service (Amazon SNS)",
+      "AWS WAF"
+    ],
+    "correctAnswer": "AWS WAF"
+  },
+  {
+    "question": "Treating infrastructure as code in the AWS Cloud allows users to:",
+    "options": [
+      "automate migration of on-premises hardware to AWS data centers.",
+      "let a third party automate an audit of the AWS infrastructure.",
+      "turn over application code to AWS so it can run on the AWS infrastructure.",
+      "automate the infrastructure provisioning process."
+    ],
+    "correctAnswer": "automate the infrastructure provisioning process."
+  },
+  {
+    "question": "A company requires a dedicated network connection between its on-premises servers and the AWS Cloud. Which AWS service should be used?",
+    "options": [
+      "AWS VPN",
+      "AWS Direct Connect",
+      "Amazon API Gateway",
+      "Amazon Connect"
+    ],
+    "correctAnswer": "AWS Direct Connect"
+  },
+  {
+    "question": "Which AWS service can be used to query stored datasets directly from Amazon S3 using standard SQL?",
+    "options": [
+      "AWS Glue",
+      "AWS Data Pipeline",
+      "Amazon CloudSearch",
+      "Amazon Athena"
+    ],
+    "correctAnswer": "Amazon Athena"
+  },
+  {
+    "question": "AWS CloudFormation is designed to help the user:",
+    "options": [
+      "model and provision resources.",
+      "update application code.",
+      "set up data lakes.",
+      "create reports for billing."
+    ],
+    "correctAnswer": "model and provision resources."
+  },
+  {
+    "question": "Which of the following is an AWS database service?",
+    "options": [
+      "Amazon Redshift",
+      "Amazon Elastic Block Store (Amazon EBS)",
+      "Amazon S3 Glacier",
+      "AWS Snowball"
+    ],
+    "correctAnswer": "Amazon Redshift"
+  },
+  {
+    "question": "A Cloud Practitioner must determine if any security groups in an AWS account have been provisioned to allow unrestricted access for specific ports. What is the SIMPLEST way to do this?",
+    "options": [
+      "Review the inbound rules for each security group in the Amazon EC2 management console to check for port 0.0.0.0/0.",
+      "Run AWS Trusted Advisor and review the findings.",
+      "Open the AWS IAM console and check the inbound rule filters for open access.",
+      "In AWS Config, create a custom rule that invokes an AWS Lambda function to review rules for inbound access."
+    ],
+    "correctAnswer": "Run AWS Trusted Advisor and review the findings."
+  },
+  {
+    "question": "What are the benefits of developing and running a new application in the AWS Cloud compared to on-premises? (Choose two.)",
+    "options": [
+      "AWS automatically distributes the data globally for higher durability.",
+      "AWS will take care of operating the application.",
+      "AWS makes it easy to architect for high availability.",
+      "AWS can easily accommodate application demand changes.",
+      "AWS takes care application security patching."
+    ],
+    "correctAnswer": [
+      "AWS makes it easy to architect for high availability.",
+      "AWS can easily accommodate application demand changes."
+    ]
+  },
+  {
+    "question": "A user needs an automated security assessment report that will identify unintended network access to Amazon EC2 instances and vulnerabilities on those instances. Which AWS service will provide this assessment report?",
+    "options": [
+      "EC2 security groups",
+      "AWS Config",
+      "Amazon Macie",
+      "Amazon Inspector"
+    ],
+    "correctAnswer": "Amazon Inspector"
+  },
+  {
+    "question": "How can a company isolate the costs of production and non-production workloads on AWS?",
+    "options": [
+      "Create Identity and Access Management (IAM) roles for production and non-production workloads.",
+      "Use different accounts for production and non-production expenses.",
+      "Use Amazon EC2 for non-production workloads and other services for production workloads.",
+      "Use Amazon CloudWatch to monitor the use of services."
+    ],
+    "correctAnswer": "Use different accounts for production and non-production expenses."
+  },
+  {
+    "question": "Where can users find a catalog of AWS-recognized providers of third-party security solutions?",
+    "options": [
+      "AWS Service Catalog",
+      "AWS Marketplace",
+      "AWS Quick Start",
+      "AWS CodeDeploy"
+    ],
+    "correctAnswer": "AWS Marketplace"
+  },
+  {
+    "question": "A Cloud Practitioner needs to store data for 7 years to meet regulatory requirements. Which AWS service will meet this requirement at the LOWEST cost?",
+    "options": [
+      "Amazon S3",
+      "AWS Snowball",
+      "Amazon Redshift",
+      "Amazon S3 Glacier"
+    ],
+    "correctAnswer": "Amazon S3 Glacier"
+  },
+  {
+    "question": "What are the immediate benefits of using the AWS Cloud? (Choose two.)",
+    "options": [
+      "Increased IT staff.",
+      "Capital expenses are replaced with variable expenses.",
+      "User control of infrastructure.",
+      "Increased agility.",
+      "AWS holds responsibility for security in the cloud."
+    ],
+    "correctAnswer": [
+      "User control of infrastructure.",
+      "Increased agility."
+    ]
+  },
+  {
+    "question": "Which security service automatically recognizes and classifies sensitive data or intellectual property on AWS?",
+    "options": [
+      "Amazon GuardDuty",
+      "Amazon Macie",
+      "Amazon Inspector",
+      "AWS Shield"
+    ],
+    "correctAnswer": "Amazon Macie"
+  },
+  {
+    "question": "What is the purpose of AWS Storage Gateway?",
+    "options": [
+      "It ensures on-premises data storage is 99.999999999% durable.",
+      "It transports petabytes of data to and from AWS.",
+      "It connects to multiple Amazon EC2 instances.",
+      "It connects on-premises data storage to the AWS Cloud."
+    ],
+    "correctAnswer": "It connects on-premises data storage to the AWS Cloud."
+  },
+  {
+    "question": "What should users do if they want to install an application in geographically isolated locations?",
+    "options": [
+      "Install the application using multiple internet gateways.",
+      "Deploy the application to an Amazon VPC.",
+      "Deploy the application to multiple AWS Regions.",
+      "Configure the application using multiple NAT gateways."
+    ],
+    "correctAnswer": "Deploy the application to multiple AWS Regions."
+  },
+  {
+    "question": "A system in the AWS Cloud is designed to withstand the failure of one or more components. What is this an example of?",
+    "options": [
+      "Elasticity",
+      "High Availability",
+      "Scalability",
+      "Agility"
+    ],
+    "correctAnswer": "High Availability"
+  },
+  {
+    "question": "A Cloud Practitioner needs a consistent and dedicated connection between AWS resources and an on-premises system. Which AWS service can fulfill this requirement?",
+    "options": [
+      "AWS Direct Connect",
+      "AWS VPN",
+      "Amazon Connect",
+      "AWS Data Pipeline"
+    ],
+    "correctAnswer": "AWS Direct Connect"
+  },
+  {
+    "question": "Within the AWS shared responsibility model, who is responsible for security and compliance?",
+    "options": [
+      "The customer is responsible.",
+      "AWS is responsible.",
+      "AWS and the customer share responsibility.",
+      "AWS shares responsibility with the relevant governing body."
+    ],
+    "correctAnswer": "AWS and the customer share responsibility."
+  },
+  {
+    "question": "To use the AWS CLI, users are required to generate:",
+    "options": [
+      "a password policy.",
+      "an access/secret key.",
+      "a managed policy.",
+      "an API key."
+    ],
+    "correctAnswer": "an access/secret key."
+  },
+  {
+    "question": "Which AWS service is used to provide encryption for Amazon EBS?",
+    "options": [
+      "AWS Certificate Manager",
+      "AWS Systems Manager",
+      "AWS KMS",
+      "AWS Config"
+    ],
+    "correctAnswer": "AWS KMS"
+  },
+  {
+    "question": "How does AWS charge for AWS Lambda usage once the free tier has been exceeded? (Choose two.)",
+    "options": [
+      "By the time it takes for the Lambda function to execute.",
+      "By the number of versions of a specific Lambda function.",
+      "By the number of requests made for a given Lambda function.",
+      "By the programming language that is used for the Lambda function.",
+      "By the total number of Lambda functions in an AWS account."
+    ],
+    "correctAnswer": [
+      "By the time it takes for the Lambda function to execute.",
+      "By the number of requests made for a given Lambda function."
+    ]
+  },
+  {
+    "question": "Which of the following describes the relationships among AWS Regions, Availability Zones, and edge locations? (Choose two.)",
+    "options": [
+      "There are more AWS Regions than Availability Zones.",
+      "There are more edge locations than AWS Regions.",
+      "An edge location is an Availability Zone.",
+      "There are more AWS Regions than edge locations.",
+      "There are more Availability Zones than AWS Regions."
+    ],
+    "correctAnswer": [
+      "There are more edge locations than AWS Regions.",
+      "There are more Availability Zones than AWS Regions."
+    ]
+  },
+  {
+    "question": "What does AWS Shield Standard provide?",
+    "options": [
+      "WAF rules",
+      "DDoS protection",
+      "Identity and Access Management (IAM) permissions and access to resources",
+      "Data encryption"
+    ],
+    "correctAnswer": "DDoS protection"
+  },
+  {
+    "question": "A company wants to build its new application workloads in the AWS Cloud instead of using on-premises resources. What expense can be reduced using the AWS Cloud?",
+    "options": [
+      "The cost of writing custom-built Java or Node .js code",
+      "Penetration testing for security",
+      "hardware required to support new applications",
+      "Writing specific test cases for third-party applications."
+    ],
+    "correctAnswer": "hardware required to support new applications"
+  },
+  {
+    "question": "What does AWS Marketplace allow users to do? (Choose two.)",
+    "options": [
+      "Sell unused Amazon EC2 Spot Instances.",
+      "Sell solutions to other AWS users.",
+      "Buy third-party software that runs on AWS.",
+      "Purchase AWS security and compliance documents.",
+      "Order AWS Snowball."
+    ],
+    "correctAnswer": [
+      "Sell solutions to other AWS users.",
+      "Buy third-party software that runs on AWS."
+    ]
+  },
+  {
+    "question": "What does it mean if a user deploys a hybrid cloud architecture on AWS?",
+    "options": [
+      "All resources run using on-premises infrastructure.",
+      "Some resources run on-premises and some run in a colocation center.",
+      "All resources run in the AWS Cloud.",
+      "Some resources run on-premises and some run in the AWS Cloud."
+    ],
+    "correctAnswer": "Some resources run on-premises and some run in the AWS Cloud."
+  },
+  {
+    "question": "Which AWS service allows users to identify the changes made to a resource over time?",
+    "options": [
+      "Amazon Inspector",
+      "AWS Config",
+      "AWS Service Catalog",
+      "AWS IAM"
+    ],
+    "correctAnswer": "AWS Config"
+  },
+  {
+    "question": "How can a company reduce its Total Cost of Ownership (TCO) using AWS?",
+    "options": [
+      "By minimizing large capital expenditures",
+      "By having no responsibility for third-party license costs",
+      "By having no operational expenditures",
+      "By having AWS manage applications"
+    ],
+    "correctAnswer": "By minimizing large capital expenditures"
+  },
+  {
+    "question": "Which activity is a customer responsibility in the AWS Cloud according to the AWS shared responsibility model?",
+    "options": [
+      "Ensuring network connectivity from AWS to the internet",
+      "Patching and fixing flaws within the AWS Cloud infrastructure",
+      "Ensuring the physical security of cloud data centers",
+      "Ensuring Amazon EBS volumes are backed up"
+    ],
+    "correctAnswer": "Ensuring Amazon EBS volumes are backed up"
+  },
+  {
+    "question": "What are the advantages of the AWS Cloud? (Choose two.)",
+    "options": [
+      "Fixed rate monthly cost",
+      "No need to guess capacity requirements",
+      "Increased speed to market",
+      "Increased upfront capital expenditure",
+      "Physical access to cloud data centers"
+    ],
+    "correctAnswer": [
+      "No need to guess capacity requirements",
+      "Increased speed to market"
+    ]
+  },
+  {
+    "question": "When comparing the total cost of ownership (TCO) of an on-premises infrastructure to a cloud architecture, what costs should be considered? (Choose two.)",
+    "options": [
+      "The credit card processing fees for application transactions in the cloud.",
+      "The cost of purchasing and installing server hardware in the on-premises data.",
+      "The cost of administering the infrastructure, including operating system and software installations, patches, backups, and recovering from failures.",
+      "The costs of third-party penetration testing.",
+      "The advertising costs associated with an ongoing enterprise-wide campaign."
+    ],
+    "correctAnswer": [
+      "The cost of purchasing and installing server hardware in the on-premises data.",
+      "The cost of administering the infrastructure, including operating system and software installations, patches, backups, and recovering from failures."
+    ]
+  },
+  {
+    "question": "Which AWS feature allows a company to take advantage of usage tiers for services across multiple member accounts?",
+    "options": [
+      "Service control policies (SCPs)",
+      "Consolidated billing",
+      "All Upfront Reserved Instances",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": "Consolidated billing"
+  },
+  {
+    "question": "What is one of the customer's responsibilities according to the AWS shared responsibility model?",
+    "options": [
+      "Virtualization infrastructure",
+      "Network infrastructure",
+      "Application security",
+      "Physical security of hardware"
+    ],
+    "correctAnswer": "Application security"
+  },
+  {
+    "question": "What helps a company provide a lower latency experience to its users globally?",
+    "options": [
+      "Using an AWS Region that is central to all users",
+      "Using a second Availability Zone in the AWS Region that is using used",
+      "Enabling caching in the AWS Region that is being used",
+      "Using edge locations to put content closer to all users"
+    ],
+    "correctAnswer": "Using edge locations to put content closer to all users"
+  },
+  {
+    "question": "How can the AWS Cloud increase user workforce productivity after migration from an on-premises data center?",
+    "options": [
+      "Users do not have to wait for infrastructure provisioning.",
+      "The AWS Cloud infrastructure is much faster than an on-premises data center infrastructure.",
+      "AWS takes over application configuration management on behalf of users.",
+      "Users do not need to address security and compliance issues."
+    ],
+    "correctAnswer": "Users do not have to wait for infrastructure provisioning."
+  },
+  {
+    "question": "Which AWS service provides a quick and automated way to create and manage AWS accounts?",
+    "options": [
+      "AWS QuickSight",
+      "Amazon Lightsail",
+      "AWS Organizations",
+      "Amazon Connect"
+    ],
+    "correctAnswer": "AWS Organizations"
+  },
+  {
+    "question": "Which Amazon RDS feature can be used to achieve high availability?",
+    "options": [
+      "Multiple Availability Zones",
+      "Amazon Reserved Instances",
+      "Provisioned IOPS storage",
+      "Enhanced monitoring"
+    ],
+    "correctAnswer": "Multiple Availability Zones"
+  },
+  {
+    "question": "Where should users report that AWS resources are being used for malicious purposes?",
+    "options": [
+      "AWS Abuse team",
+      "AWS Shield",
+      "AWS Support",
+      "AWS Developer Forums"
+    ],
+    "correctAnswer": "AWS Abuse team"
+  },
+  {
+    "question": "Which AWS service needs to be enabled to track all user account changes within the AWS Management Console?",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon Simple Notification Service (Amazon SNS)",
+      "VPC Flow Logs",
+      "AWS CloudHSM"
+    ],
+    "correctAnswer": "AWS CloudTrail"
+  },
+  {
+    "question": "What is an AWS Cloud design best practice?",
+    "options": [
+      "Tight coupling of components",
+      "Single point of failure",
+      "High availability",
+      "Overprovisioning of resources"
+    ],
+    "correctAnswer": "High availability"
+  }
+]

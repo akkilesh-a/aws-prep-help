@@ -1,0 +1,550 @@
+[
+  {
+    "question": "How can a company reduce its Total Cost of Ownership (TCO) using AWS?",
+    "options": [
+      "By minimizing large capital expenditures.",
+      "By having no responsibility for third-party license costs.",
+      "By having no operational expenditures.",
+      "By having AWS manage applications."
+    ],
+    "correctAnswer": "By minimizing large capital expenditures."
+  },
+  {
+    "question": "Which options does AWS make available for customers who want to learn about security in the cloud in an instructor-led setting? (Select TWO)",
+    "options": [
+      "AWS Trusted Advisor.",
+      "AWS Online Tech Talks.",
+      "AWS Blog.",
+      "AWS Forums.",
+      "AWS Classroom Training."
+    ],
+    "correctAnswer": [
+      "AWS Online Tech Talks.",
+      "AWS Classroom Training."
+    ]
+  },
+  {
+    "question": "Which of the following will enhance the security of access to the AWS Management Console'? (Select TWO)",
+    "options": [
+      "AWS Secrets Manager.",
+      "AWS Certificate Manager.",
+      "AWS Multi-Factor Authentication (AWS MFA).",
+      "Security groups.",
+      "Password policies."
+    ],
+    "correctAnswer": [
+      "AWS Multi-Factor Authentication (AWS MFA).",
+      "Password policies."
+    ]
+  },
+  {
+    "question": "Which of the following features can be configured through the Amazon Virtual Private Cloud (Amazon VPC) Dashboard? (Select TWO)",
+    "options": [
+      "Amazon CloudFront distributions.",
+      "Amazon Route 53.",
+      "Security Groups.",
+      "Subnets.",
+      "Elastic Load Balancing."
+    ],
+    "correctAnswer": [
+      "Security Groups.",
+      "Subnets."
+    ]
+  },
+  {
+    "question": "For which auditing process does AWS have sole responsibility?",
+    "options": [
+      "AWS IAM policies.",
+      "Physical security.",
+      "Amazon S3 bucket policies.",
+      "AWS CloudTrail Logs."
+    ],
+    "correctAnswer": "Physical security."
+  },
+  {
+    "question": "Which of the following are advantages of AWS consolidated billing? (Select TWO)",
+    "options": [
+      "The ability to receive one bill for multiple accounts.",
+      "Service limits increasing by default in all accounts.",
+      "A fixed discount on the monthly bill.",
+      "Potential volume discounts, as usage in all accounts is combined.",
+      "The automatic extension of the master account's AWS support plan to all accounts."
+    ],
+    "correctAnswer": [
+      "The ability to receive one bill for multiple accounts.",
+      "Potential volume discounts, as usage in all accounts is combined."
+    ]
+  },
+  {
+    "question": "Which of the following common IT tasks can AWS cover to free up company IT resources? (Select TWO)",
+    "options": [
+      "Patching databases software.",
+      "Testing application releases.",
+      "Backing up databases.",
+      "Creating database schema.",
+      "Running penetration tests."
+    ],
+    "correctAnswer": [
+      "Patching databases software.",
+      "Backing up databases."
+    ]
+  },
+  {
+    "question": "A company wants to expand from one AWS Region into a second AWS Region. What does the company need to do to start supporting the new Region?",
+    "options": [
+      "Contact an AWS Account Manager to sign a new contract.",
+      "Move an Availability Zone to the new Region.",
+      "Begin deploying resources in the second Region.",
+      "Download the AWS Management Console for the new Region."
+    ],
+    "correctAnswer": "Begin deploying resources in the second Region."
+  },
+  {
+    "question": "Why is it beneficial to use Elastic Load Balancers with applications?",
+    "options": [
+      "They allow for the conversion from Application Load.",
+      "Balancers to Classic Load Balancers.",
+      "They are capable of handling constant changes in network traffic patterns.",
+      "They automatically adjust capacity. They are provided at no charge to users."
+    ],
+    "correctAnswer": "They are capable of handling constant changes in network traffic patterns."
+  },
+  {
+    "question": "Which is the MINIMUM AWS Support plan that allows for one-hour target response time for support cases?",
+    "options": [
+      "Enterprise.",
+      "Business.",
+      "Developer",
+      "Basic"
+    ],
+    "correctAnswer": "Business."
+  },
+  {
+    "question": "What is the lowest-cost, durable storage option for retaining database backups for immediate retrieval?",
+    "options": [
+      "Amazon S3.",
+      "Amazon Glacier.",
+      "Amazon EBS.",
+      "Amazon EC2 Instance Store."
+    ],
+    "correctAnswer": "Amazon S3."
+  },
+  {
+    "question": "What AWS team assists customers with accelerating cloud adoption through paid engagements in any of several specialty practice areas?",
+    "options": [
+      "AWS Enterprise Support.",
+      "AWS Solutions Architects.",
+      "AWS Professional Services.",
+      "AWS Account Managers."
+    ],
+    "correctAnswer": "AWS Professional Services."
+  },
+  {
+    "question": "A company needs 24/7 phone email and chat access with a response time of less than 1 hour if a production system has a service interruption Which AWS Support plan meets these requirements at the LOWEST cost?",
+    "options": [
+      "Basic.",
+      "Developer.",
+      "Business.",
+      "Enterprise."
+    ],
+    "correctAnswer": "Business."
+  },
+  {
+    "question": "If a customer needs to audit the change management of AWS resources, which of the following AWS services should the customer use?",
+    "options": [
+      "AWS Config.",
+      "AWS Trusted Advisor.",
+      "Amazon CloudWatch.",
+      "Amazon Inspector."
+    ],
+    "correctAnswer": "AWS Config."
+  },
+  {
+    "question": "How does AWS Trusted Advisor provide guidance to users of the AWS Cloud? (Select TWO)",
+    "options": [
+      "It identifies software vulnerabilities in applications running on AWS.",
+      "It provides a list of cost optimization recommendations based on current AWS usage.",
+      "It detects potential security vulnerabilities caused by permissions settings on account resources.",
+      "It automatically corrects potential security issues caused by permissions settings on account resources.",
+      "It provides proactive alerting whenever an Amazon EC2 instance has been compromised."
+    ],
+    "correctAnswer": [
+      "It provides a list of cost optimization recommendations based on current AWS usage.",
+      "It detects potential security vulnerabilities caused by permissions settings on account resources."
+    ]
+  },
+  {
+    "question": "Which AWS managed service is used to host databases?",
+    "options": [
+      "AWS Batch.",
+      "AWS Artifact.",
+      "AWS Data Pipeline.",
+      "Amazon RDS."
+    ],
+    "correctAnswer": "Amazon RDS."
+  },
+  {
+    "question": "Which of the following Identity and Access Management (IAM) entities is associated with an access key ID and secret access key when using AWS Command Line Interface (AWS CLI)?",
+    "options": [
+      "IAM group.",
+      "IAM user.",
+      "IAM role.",
+      "IAM policy."
+    ],
+    "correctAnswer": "IAM user."
+  },
+  {
+    "question": "Under the shared responsibility model, which of the following is the customer responsible for?",
+    "options": [
+      "Ensuring that disk drives are wiped after use.",
+      "Ensuring that firmware is updated on hardware devices.",
+      "Ensuring that data is encrypted at rest.",
+      "Ensuring that network cables are category six or higher."
+    ],
+    "correctAnswer": "Ensuring that data is encrypted at rest."
+  },
+  {
+    "question": "Which AWS service provides a simple and scalable shared file storage solution for use with Linux-based AWS and on-premises servers?",
+    "options": [
+      "Amazon S3.",
+      "Amazon Glacier.",
+      "Amazon EBS.",
+      "Amazon EFS."
+    ],
+    "correctAnswer": "Amazon EFS."
+  },
+  {
+    "question": "What credential components are required to gain programmatic access to an AWS account? (Select TWO)",
+    "options": [
+      "An access key ID.",
+      "A primary key.",
+      "A secret access key.",
+      "A user ID.",
+      "A secondary key."
+    ],
+    "correctAnswer": [
+      "An access key ID.",
+      "A secret access key."
+    ]
+  },
+  {
+    "question": "Which of the following is a shared control between the customer and AWS?",
+    "options": [
+      "Providing a key for Amazon S3 client-side encryption.",
+      "Configuration of an Amazon EC2 instance.",
+      "Environmental controls of physical AWS data centers.",
+      "Awareness."
+    ],
+    "correctAnswer": "Awareness."
+  },
+  {
+    "question": "Which type of AWS storage is ephemeral and is deleted when an instance is stopped Of terminated?",
+    "options": [
+      "Amazon EBS.",
+      "Amazon EC2 instance store.",
+      "Amazon EFS.",
+      "Amazon S3."
+    ],
+    "correctAnswer": "Amazon EC2 instance store."
+  },
+  {
+    "question": "Which of the following is an advantage of consolidated billing on AWS?",
+    "options": [
+      "Volume pricing qualification.",
+      "Shared access permissions.",
+      "Multiple bills per account.",
+      "Eliminates the need for tagging."
+    ],
+    "correctAnswer": "Volume pricing qualification."
+  },
+  {
+    "question": "Which services are parts of the AWS serverless platform?",
+    "options": [
+      "Amazon EC2, Amazon S3, Amazon Athena.",
+      "Amazon Kinesis, Amazon SQS, Amazon EMR.",
+      "AWS Step Functions, Amazon DynamoDB, Amazon SNS.",
+      "Amazon Athena, Amazon Cognito, Amazon EC2."
+    ],
+    "correctAnswer": "AWS Step Functions, Amazon DynamoDB, Amazon SNS."
+  },
+  {
+    "question": "Which of the following Amazon EC2 pricing models allow customers to use existing server-bound software licenses?",
+    "options": [
+      "Spot Instances.",
+      "Reserved Instances.",
+      "Dedicated Hosts.",
+      "On-Demand Instances."
+    ],
+    "correctAnswer": "Dedicated Hosts."
+  },
+  {
+    "question": "Which of the following security measures protect access to an AWS account? (Select TWO)",
+    "options": [
+      "Enable AWS CloudTrail.",
+      "Grant least privilege access to IAM users.",
+      "Create one IAM user and share with many developers and users.",
+      "Enable Amazon CloudFront.",
+      "Activate multi-factor authentication (MFA) for privileged users."
+    ],
+    "correctAnswer": [
+      "Grant least privilege access to IAM users.",
+      "Activate multi-factor authentication (MFA) for privileged users."
+    ]
+  },
+  {
+    "question": "Which AWS service provides the ability to manage infrastructure as code?",
+    "options": [
+      "AWS CodePipeline.",
+      "AWS CodeDeploy.",
+      "AWS Direct Connect.",
+      "AWS CloudFormation."
+    ],
+    "correctAnswer": "AWS CloudFormation."
+  },
+  {
+    "question": "What is an advantage of deploying an application across multiple Availability Zones?",
+    "options": [
+      "There is a lower risk of service failure if a natural disaster causes a service disruption in a given AWS Region.",
+      "The application will have higher availability because it can withstand a service disruption in one Availability Zone.",
+      "There will be better coverage as Availability Zones are geographical^ distant and can serve a wider area.",
+      "There will be decreased application latency that will improve the user experience."
+    ],
+    "correctAnswer": "The application will have higher availability because it can withstand a service disruption in one Availability Zone."
+  },
+  {
+    "question": "A customer needs to run a MySQL database that easily scales. Which AWS service should they use?",
+    "options": [
+      "Amazon Aurora.",
+      "Amazon Redshift.",
+      "Amazon DynamoDB.",
+      "Amazon ElastiCache."
+    ],
+    "correctAnswer": "Amazon Aurora."
+  },
+  {
+    "question": "Which of the following is an AWS Cloud architecture design principle?",
+    "options": [
+      "Implement single points of failure.",
+      "Implement loose coupling.",
+      "Implement monolithic design.",
+      "Implement vertical scaling."
+    ],
+    "correctAnswer": "Implement loose coupling."
+  },
+  {
+    "question": "AWS Enterprise Support users have access to which service or feature that is not available to users with other AWS Support plans?",
+    "options": [
+      "AWS Trusted Advisor.",
+      "AWS Support case.",
+      "Concierge team.",
+      "Amazon Connect."
+    ],
+    "correctAnswer": "Concierge team."
+  },
+  {
+    "question": "A company will be moving from an on-premises data center to the AWS Cloud. What would be one financial difference after the move?",
+    "options": [
+      "Moving from variable operational expense ( opex ) to upfront capital expense (capex).",
+      "Moving from upfront capital expense (capex) to variable capital expense (capex).",
+      "Moving from upfront capital expense (capex) to variable operational expense ( opex ).",
+      "Elimination of upfront capital expense (capex) and elimination of variable operational expense ( opex )."
+    ],
+    "correctAnswer": "Moving from upfront capital expense (capex) to variable operational expense ( opex )."
+  },
+  {
+    "question": "When performing a cost analysis that supports physical isolation of a customer workload, which compute hosting model should be accounted for in the Total Cost of Ownership (TCO)?",
+    "options": [
+      "Dedicated Hosts",
+      "Reserved Instances",
+      "On-Demand Instances",
+      "No Upfront Reserved Instances"
+    ],
+    "correctAnswer": "Dedicated Hosts"
+  },
+  {
+    "question": "Which AWS service should be used for long-term, low-cost storage of data backups?",
+    "options": [
+      "Amazon RDS.",
+      "Amazon Glacier.",
+      "AWS Snowball.",
+      "AWS EBS."
+    ],
+    "correctAnswer": "Amazon Glacier."
+  },
+  {
+    "question": "Which is the MINIMUM AWS Support plan that provides technical support through phone calls?",
+    "options": [
+      "Enterprise.",
+      "Business.",
+      "Developer.",
+      "Basic."
+    ],
+    "correctAnswer": "Business."
+  },
+  {
+    "question": "Which Amazon EC2 instance pricing model can provide discounts of up to 90%?",
+    "options": [
+      "Reserved Instances.",
+      "On-Demand.",
+      "Dedicated Hosts.",
+      "Spot Instances."
+    ],
+    "correctAnswer": "Spot Instances."
+  },
+  {
+    "question": "Which of the following AWS services can be used to serve large amounts of online video content with the lowest possible latency? (Select TWO)",
+    "options": [
+      "appGateway.",
+      "Amazon S3.",
+      "Amazon Elastic File System (EFS).",
+      "Amazon Glacier.",
+      "Amazom CloudFront."
+    ],
+    "correctAnswer": [
+      "Amazon S3.",
+      "Amazom CloudFront."
+    ]
+  },
+  {
+    "question": "What can AWS edge locations be used for? (Select TWO)",
+    "options": [
+      "Hosting applications.",
+      "Delivering content closer to users.",
+      "Running NoSQL database caching services.",
+      "Reducing traffic on the server by caching responses.",
+      "Sending notification messages to end users."
+    ],
+    "correctAnswer": [
+      "Delivering content closer to users.",
+      "Reducing traffic on the server by caching responses."
+    ]
+  },
+  {
+    "question": "A company is planning to migrate from on-premises to the AWS Cloud. When AWS tool or service provides detailed reports on estimated cost savings after migration?",
+    "options": [
+      "AWS Total Cost of Ownership (TCO) Calculator.",
+      "Cost Explorer.",
+      "AWS Budgets.",
+      "AWS Migration Hub."
+    ],
+    "correctAnswer": "AWS Total Cost of Ownership (TCO) Calculator."
+  },
+  {
+    "question": "Which AWS service provides a customized view of the health of specific AWS services that power a customer's workloads running on AWS?",
+    "options": [
+      "AWS Service Health Dashboard.",
+      "AWS X-Ray.",
+      "AWS Personal Health Dashboard.",
+      "Amazon CloudWatch."
+    ],
+    "correctAnswer": "AWS Personal Health Dashboard."
+  },
+  {
+    "question": "One of the advantages to moving infrastructure from an on-premises data center to the AWS Cloud is:",
+    "options": [
+      "It allows the business to eliminate IT bills.",
+      "It allows the business to put a server in each customer's data center.",
+      "It allows the business to focus on business activities.",
+      "It allows the business to leave servers unpatched."
+    ],
+    "correctAnswer": "It allows the business to focus on business activities."
+  },
+  {
+    "question": "How can an AWS user with an AWS Basic Support plan obtain technical assistance from AWS?",
+    "options": [
+      "AWS Senior Support Engineers.",
+      "AWS Technical Account Managers.",
+      "AWS Trusted Advisor.",
+      "AWS Discussion Forums."
+    ],
+    "correctAnswer": "AWS Discussion Forums."
+  },
+  {
+    "question": "How can a user protect against AWS service disruptions if a natural disaster affects an entire geographic area?",
+    "options": [
+      "Deploy applications across multiple Availability Zones within an AWS Region.",
+      "Use a hybrid cloud computing deployment model within the geographic area.",
+      "Deploy applications across multiple AWS Regions.",
+      "Store application artifacts using AWS Artifact and replicate them across multiple AWS Regions."
+    ],
+    "correctAnswer": "Deploy applications across multiple AWS Regions."
+  },
+  {
+    "question": "Which activity is a customer responsibility in the AWS Cloud according to the AWS shared responsibility model?",
+    "options": [
+      "Ensuring network connectivity from AWS to the internet.",
+      "Patching and fixing flaws within the AWS Cloud infrastructure.",
+      "Ensuring the physical security of cloud data centers.",
+      "Ensuring Amazon EBS volumes are backed up."
+    ],
+    "correctAnswer": "Ensuring Amazon EBS volumes are backed up."
+  },
+  {
+    "question": "In which scenario should Amazon EC2 Spot Instances be used?",
+    "options": [
+      "A company wants to move its main website to AWS from an on-premises web server.",
+      "A company has a number of application services whose Service Level Agreement (SLA) requires 99.999% uptime.",
+      "A company's heavily used legacy database is currently running on-premises.",
+      "A company has a number of infrequent, interruptible jobs that are currently using On-Demand Instances."
+    ],
+    "correctAnswer": "A company has a number of infrequent, interruptible jobs that are currently using On-Demand Instances."
+  },
+  {
+    "question": "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer's decision? (Select TWO)",
+    "options": [
+      "Reduced latency to users.",
+      "The application's presentation in the local language.",
+      "Data sovereignty compliance.",
+      "Cooling costs in hotter climates.",
+      "Proximity to the customer's office for on-site visits."
+    ],
+    "correctAnswer": [
+      "Reduced latency to users.",
+      "Data sovereignty compliance."
+    ]
+  },
+  {
+    "question": "Which AWS service provides alerts when an AWS event may impact a company's AWS resources?",
+    "options": [
+      "AWS Personal Health Dashboard.",
+      "AWS Service Health Dashboard.",
+      "AWS Trusted Advisor.",
+      "AWS Infrastructure Event Management."
+    ],
+    "correctAnswer": "AWS Personal Health Dashboard."
+  },
+  {
+    "question": "Which disaster recovery scenario offers the lowest probability of down time?",
+    "options": [
+      "Backup and restore.",
+      "Pilot light.",
+      "Warm standby.",
+      "Multi-site active-active."
+    ],
+    "correctAnswer": "Multi-site active-active."
+  },
+  {
+    "question": "Which service's PRIMARY purpose is software version control?",
+    "options": [
+      "Amazon CodeStar.",
+      "AWS Command Line Interface (AWS CLI).",
+      "Amazon Cognito.",
+      "AWS CodeCommit."
+    ],
+    "correctAnswer": "AWS CodeCommit."
+  },
+  {
+    "question": "How can a customer increase security to AWS account logons? (Select TWO)",
+    "options": [
+      "Configure AWS Certificate Manager",
+      "Enable Multi-Factor Authentication (MFA)",
+      "Use Amazon Cognito to manage access",
+      "Configure a strong password policy",
+      "Enable AWS Organizations"
+    ],
+    "correctAnswer": [
+      "Enable Multi-Factor Authentication (MFA)",
+      "Configure a strong password policy"
+    ]
+  }
+]
