@@ -65,9 +65,9 @@ const QuizCard = ({
   certificationFolder: string;
 }) => {
   const regex = / /g;
-  const quizURL = `/${certificationFolder
+  const quizURL = `/quizzes/${certificationFolder
     .toLowerCase()
-    .replace(regex, "-")}/quizzes/${name.toLowerCase().replace(regex, "-")}`;
+    .replace(regex, "-")}/${name.toLowerCase().replace(regex, "-")}`;
 
   return (
     <div>

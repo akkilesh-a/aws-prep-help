@@ -13,6 +13,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./accordion";
+import { RadioGroup, RadioGroupItem } from "./radio-group";
+import { Label } from "./label";
+import { Checkbox } from "./checkbox";
+import { Input } from "./input";
+import Loader from "./loader";
 
 export {
   Button,
@@ -26,4 +31,10 @@ export {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  RadioGroup,
+  RadioGroupItem,
+  Label,
+  Checkbox,
+  Input,
+  Loader,
 };
