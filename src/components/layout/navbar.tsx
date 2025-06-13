@@ -2,14 +2,19 @@ import Link from "next/link";
 import React from "react";
 import { ModeToggle } from "../theme";
 import { H3, P } from "../typography";
-import { Book, Home } from "lucide-react";
+import { Book, User } from "lucide-react";
 import { Button } from "../ui";
 
 const navItems = [
+  // {
+  //   label: "Home",
+  //   icon: <Home />,
+  //   href: "/",
+  // },
   {
-    label: "Home",
-    icon: <Home />,
-    href: "/",
+    label: "Developer",
+    icon: <User />,
+    href: "https://www.linkedin.com/in/akkilesh-a-620561275/",
   },
   {
     label: "Certifications",
