@@ -21,7 +21,10 @@ const navItems = [
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center p-2 border-b sticky top-0 bg-background z-10">
-      <Link href="/" className="flex items-center">
+      <Link
+        href="/"
+        className="flex items-center hover:text-primary transition-colors"
+      >
         <H3>AWS Prep Help</H3>
       </Link>
       <div className="flex items-center gap-2">
@@ -30,7 +33,7 @@ const Navbar = () => {
             <Button
               key={item.href}
               variant="link"
-              className="text-white hover:text-primary transition-colors hover:no-underline"
+              className="dark:text-white text-black hover:text-primary transition-colors"
             >
               <Link className="flex items-center gap-1" href={item.href}>
                 <div className="w-4 h-4">{item.icon}</div>

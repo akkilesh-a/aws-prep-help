@@ -5,6 +5,7 @@ import React from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
+import { P } from "@/components/typography";
 
 interface OptionsProps {
   options: string[];
@@ -55,16 +56,20 @@ export const Options = ({
               checked={isOptionSelected(option)}
               onCheckedChange={() => !isSubmitted && handleOptionChange(option)}
               disabled={isSubmitted}
+              className="rounded"
             />
-            <Label htmlFor={option} className="flex-1">
-              {option}
+            <Label
+              htmlFor={option}
+              className="flex-1 flex items-center space-x-2"
+            >
+              <P>{option}</P>
+              {isSubmitted &&
+                (isOptionCorrect(option) ? (
+                  <Check className="text-green-500" />
+                ) : isOptionSelected(option) ? (
+                  <X className="text-red-500" />
+                ) : null)}
             </Label>
-            {isSubmitted &&
-              (isOptionCorrect(option) ? (
-                <Check className="text-green-500" />
-              ) : isOptionSelected(option) ? (
-                <X className="text-red-500" />
-              ) : null)}
           </div>
         ))
       ) : (
@@ -76,15 +81,18 @@ export const Options = ({
           {options.map((option) => (
             <div key={option} className="flex items-center space-x-2">
               <RadioGroupItem value={option} id={option} />
-              <Label htmlFor={option} className="flex-1">
-                {option}
+              <Label
+                htmlFor={option}
+                className="flex-1 flex items-center space-x-2"
+              >
+                <P>{option}</P>
+                {isSubmitted &&
+                  (isOptionCorrect(option) ? (
+                    <Check className="text-green-500" />
+                  ) : isOptionSelected(option) ? (
+                    <X className="text-red-500" />
+                  ) : null)}
               </Label>
-              {isSubmitted &&
-                (isOptionCorrect(option) ? (
-                  <Check className="text-green-500" />
-                ) : isOptionSelected(option) ? (
-                  <X className="text-red-500" />
-                ) : null)}
             </div>
           ))}
         </RadioGroup>

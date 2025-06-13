@@ -1,7 +1,13 @@
 "use client";
 
 import { H4 } from "@/components/typography";
-import { Card, CardContent, CardHeader, Loader } from "@/components/ui";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  Loader,
+} from "@/components/ui";
 import { Question } from "@/types";
 import { Check, X } from "lucide-react";
 import React, { useState, useEffect } from "react";
@@ -45,15 +51,9 @@ export const QuestionCard = ({
       }
     >
       <CardHeader>
-        <div className="flex items-center gap-2">
+        <CardTitle>
           <H4>{question.question}</H4>
-          {isSubmitted &&
-            (isCorrect ? (
-              <Check className="text-green-500" />
-            ) : (
-              <X className="text-red-500" />
-            ))}
-        </div>
+        </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         {isOptionsLoading ? (
