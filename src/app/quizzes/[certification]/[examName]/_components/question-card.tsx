@@ -12,6 +12,7 @@ import { Question } from "@/types";
 import React, { useState, useEffect } from "react";
 import { Options } from "./options";
 import { SelectedOptions } from "./types";
+import { AIHelp } from "./ai-help";
 
 export const QuestionCard = ({
   question,
@@ -58,22 +59,31 @@ export const QuestionCard = ({
         {isOptionsLoading ? (
           <Loader />
         ) : (
-          <Options
-            options={shuffledOptions}
-            correctAnswer={question.correctAnswer}
-            selectedOptions={
-              Array.isArray(currentSelection?.selectedOptions)
-                ? currentSelection.selectedOptions
-                : []
-            }
-            handleSetSelectedOptions={(options) =>
-              handleSetSelectedOptions({
-                question: question.question,
-                selectedOptions: options,
-              })
-            }
-            isSubmitted={isSubmitted}
-          />
+          <>
+            <Options
+              options={shuffledOptions}
+              correctAnswer={question.correctAnswer}
+              selectedOptions={
+                Array.isArray(currentSelection?.selectedOptions)
+                  ? currentSelection.selectedOptions
+                  : []
+              }
+              handleSetSelectedOptions={(options) =>
+                handleSetSelectedOptions({
+                  question: question.question,
+                  selectedOptions: options,
+                })
+              }
+              isSubmitted={isSubmitted}
+            />
+            {isSubmitted && (
+              <AIHelp
+                question={question}
+                selectedOptions={selectedOptions}
+                isCorrect={isCorrect}
+              />
+            )}
+          </>
         )}
       </CardContent>
     </Card>

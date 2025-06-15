@@ -10,29 +10,28 @@ const requestSchema = z.object({
   options: z.array(z.string()),
   correctAnswer: z.union([z.string(), z.array(z.string())]),
   selectedAnswer: z.string(),
+  isCorrect: z.boolean(),
 });
 
 const responseSchema = z.object({
   explanation: z.object({
-    whySelectedWrong: z
-      .string()
-      .describe("Explanation of why the selected answer is wrong"),
-    whyCorrectIsRight: z
-      .string()
-      .describe("Explanation of why the correct answer is right"),
+    whyCorrect: z.string().describe("Explanation of why the answer is correct"),
     whyOthersWrong: z
       .string()
       .describe("Explanation of why other options are wrong"),
     additionalPoints: z
       .string()
       .describe("Additional important points about the topic"),
+    bestPractices: z
+      .string()
+      .describe("Best practices and recommendations related to this topic"),
   }),
 });
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { question, options, correctAnswer, selectedAnswer } =
+    const { question, options, correctAnswer, selectedAnswer, isCorrect } =
       requestSchema.parse(body);
 
     const groq = createGroq({
@@ -71,18 +70,19 @@ export async function POST(req: NextRequest) {
     - Include any relevant AWS security or compliance aspects
 
     # Response Structure
-    - whySelectedWrong: Explain why the user's selected answer is incorrect
-    - whyCorrectIsRight: Explain why the correct answer is the best choice
+    - whyCorrect: Explain why the answer is correct and its benefits
     - whyOthersWrong: Explain why the other options are incorrect
-    - additionalPoints: Add any relevant AWS concepts, best practices, or related services`,
+    - additionalPoints: Add any relevant AWS concepts or related services
+    - bestPractices: Provide best practices and recommendations`,
       prompt: `Question: ${question}
 Options: ${options.join(", ")}
 Correct Answer: ${
         Array.isArray(correctAnswer) ? correctAnswer.join(", ") : correctAnswer
       }
 Selected Answer: ${selectedAnswer}
+Is Correct: ${isCorrect}
 
-Please provide a detailed explanation of why the selected answer is wrong, why the correct answer is right, why other options are wrong, and any additional points about this topic.`,
+Please provide a detailed explanation of why the answer is correct, why other options are wrong, and any additional points about this topic.`,
     });
 
     return new Response(JSON.stringify(explanation), {
