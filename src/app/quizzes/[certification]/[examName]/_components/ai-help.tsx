@@ -11,7 +11,6 @@ import {
 import { Question } from "@/types";
 import { SelectedOptions } from "./types";
 import { useState } from "react";
-import { P } from "@/components/typography";
 import ReactMarkdown from "react-markdown";
 
 interface AIHelpProps {
