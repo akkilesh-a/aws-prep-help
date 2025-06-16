@@ -7,6 +7,7 @@ import { Navbar } from "@/components/layout";
 export const metadata: Metadata = {
   title: "AWS Prep Help",
   description: "AWS Prep Help, Free practice exams for AWS certifications",
+  icons:"/logo.png"
 };
 
 const redHatMono = Red_Hat_Mono({
@@ -31,7 +32,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <div className="px-4 py-8 max-w-7xl mx-auto">
+          <div className="px-4 py-8 max-w-7xl mx-auto border">
             {children}
           </div>
         </ThemeProvider>
