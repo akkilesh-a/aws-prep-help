@@ -12,6 +12,7 @@ import { Question } from "@/types";
 import { SelectedOptions } from "./types";
 import { useState } from "react";
 import { P } from "@/components/typography";
+import ReactMarkdown from "react-markdown";
 
 interface AIHelpProps {
   question: Question;
@@ -87,28 +88,44 @@ export const AIHelp = ({
           <AccordionItem value="why-correct">
             <AccordionTrigger>Why This Answer is Correct</AccordionTrigger>
             <AccordionContent>
-              <P>{explanation.whyCorrect}</P>
+              <div className="prose prose-sm dark:prose-invert max-w-none">
+                <ReactMarkdown>
+                  {explanation.whyCorrect}
+                </ReactMarkdown>
+              </div>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="why-others">
             <AccordionTrigger>Why Other Options are Wrong</AccordionTrigger>
             <AccordionContent>
-              <P>{explanation.whyOthersWrong}</P>
+              <div className="prose prose-sm dark:prose-invert max-w-none">
+                <ReactMarkdown>
+                  {explanation.whyOthersWrong}
+                </ReactMarkdown>
+              </div>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="additional">
             <AccordionTrigger>Additional Points</AccordionTrigger>
             <AccordionContent>
-              <P>{explanation.additionalPoints}</P>
+              <div className="prose prose-sm dark:prose-invert max-w-none">
+                <ReactMarkdown>
+                  {explanation.additionalPoints}
+                </ReactMarkdown>
+              </div>
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="best-practices">
             <AccordionTrigger>Best Practices</AccordionTrigger>
             <AccordionContent>
-              <P>{explanation.bestPractices}</P>
+              <div className="prose prose-sm dark:prose-invert max-w-none">
+                <ReactMarkdown>
+                  {explanation.bestPractices}
+                </ReactMarkdown>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
