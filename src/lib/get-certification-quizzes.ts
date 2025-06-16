@@ -16,6 +16,13 @@ export const getCertificationQuizzes = async (certification: string) => {
     return quiz.replace(".json", "").replace(/-/g, " ").toUpperCase();
   });
 
-  return removedJSONQuizzes;
-};
+  // Sort the quizzes numerically
+  const sortedQuizzes = removedJSONQuizzes.sort((a, b) => {
+    const numA = parseInt(a.match(/\d+/)?.[0] || "0");
+    const numB = parseInt(b.match(/\d+/)?.[0] || "0");
+    return numA - numB;
+  });
 
+  console.log(sortedQuizzes);
+  return sortedQuizzes;
+};

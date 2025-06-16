@@ -19,11 +19,13 @@ export const QuestionCard = ({
   selectedOptions,
   handleSetSelectedOptions,
   isSubmitted,
+  questionNumber,
 }: {
   question: Question;
   selectedOptions: SelectedOptions[];
   handleSetSelectedOptions: (value: SelectedOptions) => void;
   isSubmitted: boolean;
+  questionNumber: number;
 }) => {
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [isOptionsLoading, setIsOptionsLoading] = useState(true);
@@ -52,7 +54,7 @@ export const QuestionCard = ({
     >
       <CardHeader>
         <CardTitle>
-          <H4>{question.question}</H4>
+          <H4>{questionNumber}. {question.question}</H4>
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">

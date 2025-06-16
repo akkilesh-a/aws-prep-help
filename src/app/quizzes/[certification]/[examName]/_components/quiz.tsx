@@ -39,13 +39,14 @@ export const Quiz = ({ questions }: { questions: Question[] }) => {
 
   return (
     <div className="space-y-4">
-      {questions.map((question: Question) => (
+      {questions.map((question: Question, index: number) => (
         <QuestionCard
           key={question.question}
           selectedOptions={selectedOptions}
           handleSetSelectedOptions={handleSetSelectedOptions}
           question={question}
           isSubmitted={isSubmitted}
+          questionNumber={index + 1}
         />
       ))}
       {!isSubmitted && (
