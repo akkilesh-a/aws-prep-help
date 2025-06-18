@@ -8,6 +8,7 @@ import {
 } from "@/components/ui";
 import { Github, Home } from "lucide-react";
 import Link from "next/link";
+import { PageWrapper } from "@/components/layout";
 
 // Types
 interface CreditItem {
@@ -49,7 +50,7 @@ export default function CreditsPage() {
   ];
 
   return (
-    <div className="px-16 py-8 space-y-8 max-w-7xl mx-auto">
+    <PageWrapper>
       <H1>CREDITS</H1>
 
       {/* Credits List */}
@@ -64,6 +65,6 @@ export default function CreditsPage() {
           ← Back to <Home className="w-4 h-4" />
         </Link>
       </Button>
-    </div>
+    </PageWrapper>
   );
 }

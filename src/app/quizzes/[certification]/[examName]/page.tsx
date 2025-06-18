@@ -2,6 +2,7 @@ import { H1 } from "@/components/typography";
 import { getCertificationQuizQuestions } from "@/lib";
 import React from "react";
 import { Quiz } from "./_components";
+import { PageWrapper } from "@/components/layout";
 
 const CertificationQuizPage = async ({
   params,
@@ -17,10 +18,10 @@ const CertificationQuizPage = async ({
   );
 
   return (
-    <div className="px-16 py-8 space-y-8 max-w-7xl mx-auto">
+    <PageWrapper>
       <H1>{examNameFormatted}</H1>
       <Quiz questions={questions} />
-    </div>
+    </PageWrapper>
   );
 };
 

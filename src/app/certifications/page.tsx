@@ -12,6 +12,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { PageWrapper } from "@/components/layout";
 
 const CertificationsPage = async () => {
   const certifications = await getCertifications();
@@ -21,7 +22,7 @@ const CertificationsPage = async () => {
   }
 
   return (
-    <div className="px-16 py-8 space-y-8 max-w-7xl mx-auto">
+    <PageWrapper>
       <H1>CERTIFICATIONS</H1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {certifications.map((certification) => (
@@ -33,7 +34,7 @@ const CertificationsPage = async () => {
           />
         ))}
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 
