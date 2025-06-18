@@ -17,7 +17,7 @@ const CertificationQuizPage = async ({
   );
 
   return (
-    <div className="space-y-4">
+    <div className="px-16 py-8 space-y-8 max-w-7xl mx-auto">
       <H1>{examNameFormatted}</H1>
       <Quiz questions={questions} />
     </div>

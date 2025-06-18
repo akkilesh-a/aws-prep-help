@@ -6,7 +6,7 @@ import { Navbar } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "AWS Prep Help",
-  description: "AWS Prep Help, Free practice exams for AWS certifications",
+  description: "AWS Prep Help, Free practice quizzes for AWS certifications",
   icons:"/logo.png"
 };
 
@@ -32,9 +32,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <div className="px-4 py-8 max-w-7xl mx-auto border">
+          <main>
             {children}
-          </div>
+          </main>
         </ThemeProvider>
       </body>
     </html>

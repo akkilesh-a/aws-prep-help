@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import React, { useState } from "react";
 import { ModeToggle } from "../theme";
 import { H4, P } from "../typography";
-import { Book, User, Menu, X } from "lucide-react";
+import { Book, User, Menu, X, Heart } from "lucide-react";
 import { Button } from "../ui";
 import Image from "next/image";
 
@@ -19,14 +19,19 @@ const navItems = [
     icon: <Book />,
     href: "/certifications",
   },
+  {
+    label: "Credits",
+    icon: <Heart />,
+    href: "/credits",
+  },
 ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="border-b sticky top-0 bg-background z-10">
-      <div className="flex justify-between items-center px-4 sm:px-8 py-2 mx-auto">
+    <nav className="border-b sticky top-0 bg-background/50 z-10 backdrop-blur-sm">
+      <div className="flex justify-between items-center px-4 sm:px-8 py-2 mx-auto max-w-7xl">
         <Link
           href="/"
           className="flex items-center gap-2 hover:text-primary transition-colors"
@@ -58,7 +63,11 @@ const Navbar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {menuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </div>

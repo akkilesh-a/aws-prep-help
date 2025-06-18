@@ -21,6 +21,7 @@
     "ai-fallback": "^0.1.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.18.1",
     "lucide-react": "^0.514.0",
     "next": "14.2.29",
     "next-themes": "^0.4.6",
