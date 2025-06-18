@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { ModeToggle } from "../theme";
 import { H4, P } from "../typography";
-import { Book, User, Menu, X, Heart } from "lucide-react";
+import { Book, User, Menu, X, Heart, Github } from "lucide-react";
 import { Button } from "../ui";
 import Image from "next/image";
 
@@ -54,10 +54,20 @@ const Navbar = () => {
             </Button>
           ))}
           <ModeToggle />
+          <Link href="https://github.com/akkilesh-a/aws-prep-help">
+            <Button variant="ghost" size="icon">
+              <Github />
+            </Button>
+          </Link>
         </div>
         {/* Mobile Hamburger */}
         <div className="md:hidden flex items-center">
           <ModeToggle />
+          <Link href="https://github.com/akkilesh-a/aws-prep-help">
+            <Button variant="ghost" size="icon">
+              <Github />
+            </Button>
+          </Link>
           <button
             className="ml-2 p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             onClick={() => setMenuOpen(!menuOpen)}
