@@ -18,6 +18,15 @@ import { Label } from "./label";
 import { Checkbox } from "./checkbox";
 import { Input } from "./input";
 import Loader from "./loader";
+import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./dropdown-menu";
 
 export {
   Button,
@@ -37,4 +46,13 @@ export {
   Checkbox,
   Input,
   Loader,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
 };

@@ -4,16 +4,18 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { ModeToggle } from "../theme";
 import { H4, P } from "../typography";
-import { Book, User, Menu, X, Heart, Github } from "lucide-react";
+import { Book, Menu, X, Heart, Github } from "lucide-react";
 import { Button } from "../ui";
 import Image from "next/image";
+import { UserAvatarMenu } from "../auth";
+import { useLoggedIn } from "@/hooks";
 
 const navItems = [
-  {
-    label: "Developer",
-    icon: <User />,
-    href: "https://www.linkedin.com/in/akkilesh-a-620561275/",
-  },
+  // {
+  //   label: "Developer",
+  //   icon: <User />,
+  //   href: "https://www.linkedin.com/in/akkilesh-a-620561275/",
+  // },
   {
     label: "Certifications",
     icon: <Book />,
@@ -28,6 +30,7 @@ const navItems = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const loggedIn = useLoggedIn();
 
   return (
     <nav className="border-b sticky top-0 bg-background/50 z-10 backdrop-blur-sm">
@@ -59,6 +62,7 @@ const Navbar = () => {
               <Github />
             </Button>
           </Link>
+          {loggedIn && <UserAvatarMenu />}
         </div>
         {/* Mobile Hamburger */}
         <div className="md:hidden flex items-center">
@@ -97,6 +101,9 @@ const Navbar = () => {
               </Link>
             </Button>
           ))}
+          <div className="flex justify-center py-2">
+            {loggedIn && <UserAvatarMenu />}
+          </div>
         </div>
       )}
     </nav>
