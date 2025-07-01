@@ -3,11 +3,12 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Red_Hat_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "AWS Prep Help",
   description: "AWS Prep Help, Free practice quizzes for AWS certifications",
-  icons:"/logo.png"
+  icons: "/logo.png",
 };
 
 const redHatMono = Red_Hat_Mono({
@@ -32,9 +33,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
