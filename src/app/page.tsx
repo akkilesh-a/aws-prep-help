@@ -1,17 +1,12 @@
 import { H1, H2, P } from "@/components/typography";
-import {
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui";
+import { Button } from "@/components/ui";
 import AnimatedText from "@/components/ui/animated-text";
 import { getCertifications } from "@/lib";
 import { CertificationConfig } from "@/types";
-import { Brain, Zap, Clock, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { FeaturesSection } from "@/components/landing-page";
 
 // Hero Section Component
 function HeroSection({
@@ -107,76 +102,6 @@ function HeroSection({
             </div>
             <P variant="muted">Explanations</P>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Features Section Component
-function FeaturesSection() {
-  const features = [
-    {
-      icon: Brain,
-      title: "AI-Powered Explanations",
-      description:
-        "Get detailed explanations for every question using advanced AI technology. Understand not just what's correct, but why it's correct.",
-      bgColor: "bg-blue-100 dark:bg-blue-900",
-      iconColor: "text-blue-600 dark:text-blue-400",
-    },
-    {
-      icon: Zap,
-      title: "Instant Feedback",
-      description:
-        "Receive immediate feedback on your answers with detailed explanations and performance tracking to identify areas for improvement.",
-      bgColor: "bg-purple-100 dark:bg-purple-900",
-      iconColor: "text-purple-600 dark:text-purple-400",
-    },
-
-    {
-      icon: Clock,
-      title: "Flexible Learning",
-      description:
-        "Study at your own pace with 24/7 access to practice quizzes. Perfect for busy professionals and students.",
-      bgColor: "bg-red-100 dark:bg-red-900",
-      iconColor: "text-red-600 dark:text-red-400",
-    },
-  ];
-
-  return (
-    <section className="py-20 px-4 dark:bg-black bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <H2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Choose AWS Prep Help?
-          </H2>
-          <P className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Our platform combines the best of traditional study methods with
-            cutting-edge AI technology
-          </P>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <Card
-              key={index}
-              className="border-0 shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <CardHeader>
-                <div
-                  className={`w-12 h-12 ${feature.bgColor} rounded-lg flex items-center justify-center mb-4`}
-                >
-                  <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
-                </div>
-                <CardTitle>{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <P className="text-gray-600 dark:text-gray-300">
-                  {feature.description}
-                </P>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </div>
     </section>

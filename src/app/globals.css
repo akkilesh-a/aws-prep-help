@@ -175,3 +175,17 @@
 .animate-float-fast {
   animation: float-fast 5s ease-in-out infinite;
 }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5); /* Custom thumb color */
+  border-radius: 9999px;
+}

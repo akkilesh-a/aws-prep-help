@@ -4,16 +4,16 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { ModeToggle } from "../theme";
 import { H4, P } from "../typography";
-import { Book, User, Menu, X, Heart, Github } from "lucide-react";
+import { Book, Menu, X, Heart, Github } from "lucide-react";
 import { Button } from "../ui";
 import Image from "next/image";
 
 const navItems = [
-  {
-    label: "Developer",
-    icon: <User />,
-    href: "https://www.linkedin.com/in/akkilesh-a-620561275/",
-  },
+  // {
+  //   label: "Developer",
+  //   icon: <User />,
+  //   href: "https://www.linkedin.com/in/akkilesh-a-620561275/",
+  // },
   {
     label: "Certifications",
     icon: <Book />,

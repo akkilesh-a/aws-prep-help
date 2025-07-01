@@ -18,6 +18,7 @@ import { Label } from "./label";
 import { Checkbox } from "./checkbox";
 import { Input } from "./input";
 import Loader from "./loader";
+import { Card3DList, type Card3DListProps } from "./animated-3d-card";
 
 export {
   Button,
@@ -37,4 +38,6 @@ export {
   Checkbox,
   Input,
   Loader,
+  Card3DList,
+  type Card3DListProps,
 };
