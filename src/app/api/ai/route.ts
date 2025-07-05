@@ -3,7 +3,7 @@ import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { generateObject } from "ai";
 import { NextRequest } from "next/server";
 import { z } from "zod";
-import { createHash } from "crypto";
+import { generateCacheKey } from "@/lib/cache-utils";
 
 const requestSchema = z.object({
   question: z.string().min(1),
@@ -28,16 +28,10 @@ const responseSchema = z.object({
   }),
 });
 
-// Generate a consistent cache key from question and options
-function generateCacheKey(question: string, options: string[]): string {
-  const content = `${question}:${options.sort().join("|")}`;
-  return `ai-explanation:${createHash('sha256').update(content).digest('hex')}`;
-}
-
 export async function POST(req: NextRequest) {
   const startTime = Date.now();
   let cacheHit = false;
-  
+
   try {
     const body = await req.json();
     const { question, options, correctAnswer, selectedAnswer, isCorrect } =
@@ -48,7 +42,7 @@ export async function POST(req: NextRequest) {
     });
 
     // Generate a proper cache key
-    const cacheKey = generateCacheKey(question, options);
+    const cacheKey = generateCacheKey(question, options, correctAnswer);
 
     // Try to get cached explanation
     const cachedData = await redis.get(cacheKey);
@@ -56,11 +50,20 @@ export async function POST(req: NextRequest) {
     if (cachedData) {
       cacheHit = true;
       // Parse the cached data back to object
-      const explanation = typeof cachedData === 'string' ? JSON.parse(cachedData) : cachedData;
-      
+      const explanation =
+        typeof cachedData === "string" ? JSON.parse(cachedData) : cachedData;
+
       const responseTime = Date.now() - startTime;
-      console.log(`[AI API] Cache HIT - Response time: ${responseTime}ms - Key: ${cacheKey.substring(0, 20)}...`);
-      
+      console.log(
+        `[AI API] Cache HIT - Response time: ${responseTime}ms - Key: ${cacheKey.substring(
+          0,
+          20
+        )}...`
+      );
+      console.log(
+        `[AI API] Cache HIT - Question: "${question.substring(0, 50)}..."`
+      );
+
       return new Response(JSON.stringify(explanation), {
         headers: { "Content-Type": "application/json" },
       });
@@ -88,11 +91,13 @@ export async function POST(req: NextRequest) {
               - whyOthersWrong: Explain why the other options are incorrect
               - additionalPoints: Add any relevant AWS concepts or related services
               - bestPractices: Provide best practices and recommendations`,
-                prompt: `Question: ${question}
+      prompt: `Question: ${question}
                 Options: ${options.join(", ")}
                 Correct Answer: ${
-                        Array.isArray(correctAnswer) ? correctAnswer.join(", ") : correctAnswer
-                      }
+                  Array.isArray(correctAnswer)
+                    ? correctAnswer.join(", ")
+                    : correctAnswer
+                }
                 Selected Answer: ${selectedAnswer}
                 Is Correct: ${isCorrect}
 
@@ -103,15 +108,32 @@ export async function POST(req: NextRequest) {
     await redis.set(cacheKey, JSON.stringify(explanation));
 
     const responseTime = Date.now() - startTime;
-    console.log(`[AI API] Cache MISS - Response time: ${responseTime}ms - Key: ${cacheKey.substring(0, 20)}...`);
+    console.log(
+      `[AI API] Cache MISS - Response time: ${responseTime}ms - Key: ${cacheKey.substring(
+        0,
+        20
+      )}...`
+    );
+    console.log(
+      `[AI API] Cache MISS - Question: "${question.substring(0, 50)}..."`
+    );
+    console.log(
+      `[AI API] Cache MISS - Options count: ${
+        options.length
+      }, Correct answer: ${
+        Array.isArray(correctAnswer) ? correctAnswer.join(", ") : correctAnswer
+      }`
+    );
 
     return new Response(JSON.stringify(explanation), {
       headers: { "Content-Type": "application/json" },
     });
-
   } catch (error: unknown) {
     const responseTime = Date.now() - startTime;
-    console.error(`[AI API] ERROR - Response time: ${responseTime}ms - Cache hit: ${cacheHit}`, error);
+    console.error(
+      `[AI API] ERROR - Response time: ${responseTime}ms - Cache hit: ${cacheHit}`,
+      error
+    );
 
     if (error instanceof z.ZodError) {
       const firstError = error.errors[0];
