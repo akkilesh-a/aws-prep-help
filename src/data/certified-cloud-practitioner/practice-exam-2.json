@@ -7,7 +7,13 @@
       "IAM User Groups",
       "AWS Config"
     ],
-    "correctAnswer": "AWS Organizations"
+    "correctAnswer": "AWS Organizations",
+    "explanation": {
+      "whyCorrect": "AWS Organizations is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS Trusted Advisor\" is incorrect because service that provides real-time guidance to help provision resources following aws best practices., which does not match the requirements. \"IAM User Groups\" is incorrect because collection of iam users that makes it easier to manage permissions for multiple users., which does not match the requirements. \"AWS Config\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which service provides object-level storage in AWS?",
@@ -17,7 +23,13 @@
       "Amazon EFS",
       "Amazon S3"
     ],
-    "correctAnswer": "Amazon S3"
+    "correctAnswer": "Amazon S3",
+    "explanation": {
+      "whyCorrect": "Amazon S3 is correct: Lowest-cost storage class for data archiving and long-term backup.",
+      "whyOthersWrong": "\"Amazon EBS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon Instance Store\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon EFS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "A company is concerned that they are spending money on underutilized compute resources in AWS. Which AWS feature will help ensure that their applications are automatically adding/removing EC2 compute capacity to closely match the required demand?",
@@ -27,7 +39,13 @@
       "AWS Auto Scaling",
       "AWS Cost Explorer"
     ],
-    "correctAnswer": "AWS Auto Scaling"
+    "correctAnswer": "AWS Auto Scaling",
+    "explanation": {
+      "whyCorrect": "AWS Auto Scaling is correct: Service that automatically adjusts capacity to maintain steady, predictable performance.",
+      "whyOthersWrong": "\"AWS Elastic Load Balancer\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Budgets\" is incorrect because service that lets you set custom budgets to track your cost and usage., which does not match the requirements. \"AWS Cost Explorer\" is incorrect because tool that enables you to visualize, understand, and manage your aws costs and usage over time., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which S3 storage class is best for data with unpredictable access patterns?",
@@ -37,7 +55,13 @@
       "Amazon S3 Standard",
       "Amazon S3 Standard-Infrequent Access"
     ],
-    "correctAnswer": "Amazon S3 Intelligent-Tiering"
+    "correctAnswer": "Amazon S3 Intelligent-Tiering",
+    "explanation": {
+      "whyCorrect": "Amazon S3 Intelligent-Tiering is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon S3 Glacier Flexible Retrieval\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon S3 Standard\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon S3 Standard-Infrequent Access\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What is the AWS database service that allows you to upload data structured in key-value format?",
@@ -47,7 +71,13 @@
       "Amazon Redshift",
       "Amazon RDS"
     ],
-    "correctAnswer": "Amazon DynamoDB"
+    "correctAnswer": "Amazon DynamoDB",
+    "explanation": {
+      "whyCorrect": "Amazon DynamoDB is correct: Fully managed NoSQL database service.",
+      "whyOthersWrong": "\"Amazon Aurora\" is incorrect because mysql and postgresql-compatible relational database built for the cloud., which does not match the requirements. \"Amazon Redshift\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon RDS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following is NOT correct regarding Amazon EC2 On-demand instances?",
@@ -57,7 +87,13 @@
       "With on-demand instances, no longer-term commitments or upfront payments are needed",
       "When using on-demand Linux instances, you are charged per second based on an hourly rate"
     ],
-    "correctAnswer": "You have to pay a start-up fee when launching a new instance for the first time"
+    "correctAnswer": "You have to pay a start-up fee when launching a new instance for the first time",
+    "explanation": {
+      "whyCorrect": "You have to pay a start-up fee when launching a new instance for the first time is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"The on-demand instances follow the AWS pay-as-you-go pricing model\" is incorrect because ec2 instances that you pay for by the hour or second with no long-term commitments., which does not match the requirements. \"With on-demand instances, no longer-term commitments or upfront payments are needed\" is incorrect because ec2 instances that you pay for by the hour or second with no long-term commitments., which does not match the requirements. \"When using on-demand Linux instances, you are charged per second based on an hourly rate\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "A company has moved to AWS recently. Which of the following AWS Services will help ensure that they have the proper security settings? (Choose TWO)",
@@ -68,12 +104,24 @@
       "Amazon CloudWatch",
       "Concierge Support Team"
     ],
-    "correctAnswer": ["AWS Trusted Advisor", "Amazon Inspector"]
+    "correctAnswer": ["AWS Trusted Advisor", "Amazon Inspector"],
+    "explanation": {
+      "whyCorrect": "AWS Trusted Advisor is correct: Service that provides real-time guidance to help provision resources following AWS best practices. Amazon Inspector is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon SNS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon CloudWatch\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Concierge Support Team\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What is the AWS feature that provides an additional level of security above the default authentication mechanism of usernames and passwords?",
     "options": ["Encrypted keys", "Email verification", "AWS KMS", "AWS MFA"],
-    "correctAnswer": "AWS MFA"
+    "correctAnswer": "AWS MFA",
+    "explanation": {
+      "whyCorrect": "AWS MFA is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Encrypted keys\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Email verification\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS KMS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "A company is introducing a new product to their customers, and is expecting a surge in traffic to their web application. As part of their Enterprise Support plan, which of the following provides the company with architectural and scaling guidance?",
@@ -83,7 +131,13 @@
       "Infrastructure Event Management",
       "AWS Support Concierge Service"
     ],
-    "correctAnswer": "Infrastructure Event Management"
+    "correctAnswer": "Infrastructure Event Management",
+    "explanation": {
+      "whyCorrect": "Infrastructure Event Management is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS Knowledge Center\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Health Dashboard\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Support Concierge Service\" is incorrect because dedicated support team for enterprise support customers handling billing and account inquiries., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "You work as an on-premises MySQL DBA. The work of database configuration, backups, patching, and DR can be time-consuming and repetitive. Your company has decided to migrate to the AWS Cloud. Which of the following can help save time on database maintenance so you can focus on data architecture and performance?",
@@ -93,7 +147,13 @@
       "Amazon DynamoDB",
       "Amazon CloudWatch"
     ],
-    "correctAnswer": "Amazon RDS"
+    "correctAnswer": "Amazon RDS",
+    "explanation": {
+      "whyCorrect": "Amazon RDS is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon Redshift\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon DynamoDB\" is incorrect because fully managed nosql database service., which does not match the requirements. \"Amazon CloudWatch\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the below is a best-practice when designing solutions on AWS?",
@@ -103,7 +163,13 @@
       "Automate wherever possible to make architectural experimentation easier",
       "Provision a large compute capacity to handle any spikes in load"
     ],
-    "correctAnswer": "Automate wherever possible to make architectural experimentation easier"
+    "correctAnswer": "Automate wherever possible to make architectural experimentation easier",
+    "explanation": {
+      "whyCorrect": "Automate wherever possible to make architectural experimentation easier is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Invest heavily in architecting your environment, as it is not easy to change your design later\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Use AWS reservations to reduce costs when testing your production environment\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Provision a large compute capacity to handle any spikes in load\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "According to the AWS Acceptable Use Policy, which of the following statements is true regarding penetration testing of EC2 instances?",
@@ -113,7 +179,13 @@
       "Penetration testing can be performed by the customer on their own instances without prior authorization from AWS",
       "The AWS customers are only allowed to perform penetration testing on services managed by AWS"
     ],
-    "correctAnswer": "Penetration testing can be performed by the customer on their own instances without prior authorization from AWS"
+    "correctAnswer": "Penetration testing can be performed by the customer on their own instances without prior authorization from AWS",
+    "explanation": {
+      "whyCorrect": "Penetration testing can be performed by the customer on their own instances without prior authorization from AWS is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Penetration testing is not allowed in AWS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Penetration testing is performed automatically by AWS to determine vulnerabilities in your AWS infrastructure\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"The AWS customers are only allowed to perform penetration testing on services managed by AWS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which service is used to ensure that messages between software components are not lost if one or more components fail?",
@@ -123,7 +195,13 @@
       "AWS Direct Connect",
       "Amazon Connect"
     ],
-    "correctAnswer": "Amazon SQS"
+    "correctAnswer": "Amazon SQS",
+    "explanation": {
+      "whyCorrect": "Amazon SQS is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon SES\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Direct Connect\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon Connect\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "The principle \"design for failure and nothing will fail\" is very important when designing your AWS Cloud architecture. Which of the following would help adhere to this principle? (Choose TWO)",
@@ -134,12 +212,24 @@
       "Penetration testing",
       "Vertical Scaling"
     ],
-    "correctAnswer": ["Availability Zones", "Elastic Load Balancing"]
+    "correctAnswer": ["Availability Zones", "Elastic Load Balancing"],
+    "explanation": {
+      "whyCorrect": "Availability Zones is the correct answer because it best addresses the requirements stated in the question. Elastic Load Balancing is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Multi-factor authentication\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Penetration testing\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Vertical Scaling\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What is the AWS service that provides a virtual network dedicated to your AWS account?",
     "options": ["AWS VPN", "AWS Subnets", "AWS Dedicated Hosts", "Amazon VPC"],
-    "correctAnswer": "Amazon VPC"
+    "correctAnswer": "Amazon VPC",
+    "explanation": {
+      "whyCorrect": "Amazon VPC is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS VPN\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Subnets\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Dedicated Hosts\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "According to the AWS Shared responsibility model, which of the following are the responsibility of the customer? (Choose TWO)",
@@ -153,7 +243,13 @@
     "correctAnswer": [
       "Protecting the confidentiality of data in transit in Amazon S3",
       "Patching applications installed on Amazon EC2"
-    ]
+    ],
+    "explanation": {
+      "whyCorrect": "Protecting the confidentiality of data in transit in Amazon S3 is the correct answer because it best addresses the requirements stated in the question. Patching applications installed on Amazon EC2 is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Managing environmental events of AWS data centers\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Controlling physical access to AWS Regions\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Ensuring that the underlying EC2 host is configured properly\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following AWS services can be used as a compute resource? (Choose TWO)",
@@ -164,7 +260,13 @@
       "Amazon EC2",
       "AWS Lambda"
     ],
-    "correctAnswer": ["Amazon EC2", "AWS Lambda"]
+    "correctAnswer": ["Amazon EC2", "AWS Lambda"],
+    "explanation": {
+      "whyCorrect": "Amazon EC2 is the correct answer because it best addresses the requirements stated in the question. AWS Lambda is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon VPC\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon CloudWatch\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon S3\" is incorrect because lowest-cost storage class for data archiving and long-term backup., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Your company is designing a new application that will store and retrieve photos and videos. Which of the following services should you recommend as the underlying storage mechanism?",
@@ -174,12 +276,24 @@
       "Amazon S3",
       "Amazon Instance store"
     ],
-    "correctAnswer": "Amazon S3"
+    "correctAnswer": "Amazon S3",
+    "explanation": {
+      "whyCorrect": "Amazon S3 is correct: Lowest-cost storage class for data archiving and long-term backup.",
+      "whyOthersWrong": "\"Amazon EBS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon SQS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon Instance store\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following is equivalent to a user name and password and is used to authenticate your programmatic access to AWS services and APIs?",
     "options": ["Instance Password", "Key pairs", "Access Keys", "MFA"],
-    "correctAnswer": "Access Keys"
+    "correctAnswer": "Access Keys",
+    "explanation": {
+      "whyCorrect": "Access Keys is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Instance Password\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Key pairs\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"MFA\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What does Amazon ElastiCache provide?",
@@ -189,7 +303,13 @@
       "An online software store that allows Customers to launch pre-configured software with just few clicks",
       "A domain name system in the cloud"
     ],
-    "correctAnswer": "In-memory caching for read-heavy applications"
+    "correctAnswer": "In-memory caching for read-heavy applications",
+    "explanation": {
+      "whyCorrect": "In-memory caching for read-heavy applications is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"An Ehcache compatible in-memory data store\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"An online software store that allows Customers to launch pre-configured software with just few clicks\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"A domain name system in the cloud\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What is the AWS service that enables you to manage all of your AWS accounts from a single master account?",
@@ -199,7 +319,13 @@
       "AWS Organizations",
       "Amazon Config"
     ],
-    "correctAnswer": "AWS Organizations"
+    "correctAnswer": "AWS Organizations",
+    "explanation": {
+      "whyCorrect": "AWS Organizations is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS WAF\" is incorrect because web application firewall that helps protect web applications from common web exploits., which does not match the requirements. \"AWS Trusted Advisor\" is incorrect because service that provides real-time guidance to help provision resources following aws best practices., which does not match the requirements. \"Amazon Config\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following EC2 instance purchasing options supports the Bring Your Own License (BYOL) model for almost every BYOL scenario?",
@@ -209,7 +335,13 @@
       "On-demand Instances",
       "Reserved Instances"
     ],
-    "correctAnswer": "Dedicated Hosts"
+    "correctAnswer": "Dedicated Hosts",
+    "explanation": {
+      "whyCorrect": "Dedicated Hosts is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Dedicated Instances\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"On-demand Instances\" is incorrect because ec2 instances that you pay for by the hour or second with no long-term commitments., which does not match the requirements. \"Reserved Instances\" is incorrect because ec2 instances with significant discount (up to 75%) for 1-3 year terms., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following is one of the benefits of moving infrastructure from an on-premises data center to AWS?",
@@ -219,7 +351,13 @@
       "Reduced Capital Expenditure (CapEx)",
       "AWS holds responsibility for managing customer applications"
     ],
-    "correctAnswer": "Reduced Capital Expenditure (CapEx)"
+    "correctAnswer": "Reduced Capital Expenditure (CapEx)",
+    "explanation": {
+      "whyCorrect": "Reduced Capital Expenditure (CapEx) is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Free support for all enterprise customers\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Automatic data protection\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS holds responsibility for managing customer applications\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following are important design principles you should adopt when designing systems on AWS? (Choose TWO)",
@@ -233,7 +371,13 @@
     "correctAnswer": [
       "Automate wherever possible",
       "Remove single points of failure"
-    ]
+    ],
+    "explanation": {
+      "whyCorrect": "Automate wherever possible is the correct answer because it best addresses the requirements stated in the question. Remove single points of failure is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Always use Global Services in your architecture rather than Regional Services\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Always choose to pay as you go\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Treat servers as fixed resources\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which AWS Service can be used to establish a dedicated, private network connection between AWS and your datacenter?",
@@ -243,7 +387,13 @@
       "AWS Snowball",
       "Amazon Route 53"
     ],
-    "correctAnswer": "AWS Direct Connect"
+    "correctAnswer": "AWS Direct Connect",
+    "explanation": {
+      "whyCorrect": "AWS Direct Connect is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon CloudFront\" is incorrect because content delivery network (cdn) service that delivers data, videos, applications, and apis to customers globally., which does not match the requirements. \"AWS Snowball\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon Route 53\" is incorrect because aws's scalable domain name system (dns) web service., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "You are working on two projects that require completely different network configurations. Which AWS service or feature will allow you to isolate resources and network configurations?",
@@ -253,17 +403,35 @@
       "Security Groups",
       "Amazon CloudFront"
     ],
-    "correctAnswer": "Virtual Private Cloud"
+    "correctAnswer": "Virtual Private Cloud",
+    "explanation": {
+      "whyCorrect": "Virtual Private Cloud is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Internet gateways\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Security Groups\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon CloudFront\" is incorrect because content delivery network (cdn) service that delivers data, videos, applications, and apis to customers globally., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following services can help protect your web applications from SQL injection and other vulnerabilities in your application code?",
     "options": ["Amazon Cognito", "AWS IAM", "Amazon Aurora", "AWS WAF"],
-    "correctAnswer": "AWS WAF"
+    "correctAnswer": "AWS WAF",
+    "explanation": {
+      "whyCorrect": "AWS WAF is correct: Web Application Firewall that helps protect web applications from common web exploits.",
+      "whyOthersWrong": "\"Amazon Cognito\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS IAM\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon Aurora\" is incorrect because mysql and postgresql-compatible relational database built for the cloud., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "An organization needs to analyze and process a large number of data sets. Which AWS service should they use?",
     "options": ["Amazon EMR", "Amazon MQ", "Amazon SNS", "Amazon SQS"],
-    "correctAnswer": "Amazon EMR"
+    "correctAnswer": "Amazon EMR",
+    "explanation": {
+      "whyCorrect": "Amazon EMR is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon MQ\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon SNS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon SQS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Based on the AWS Shared Responsibility Model, which of the following are the sole responsibility of AWS? (Choose TWO)",
@@ -274,7 +442,13 @@
       "Configuring Access Control Lists (ACLs)",
       "Hardware maintenance"
     ],
-    "correctAnswer": ["Creating hypervisors", "Hardware maintenance"]
+    "correctAnswer": ["Creating hypervisors", "Hardware maintenance"],
+    "explanation": {
+      "whyCorrect": "Creating hypervisors is the correct answer because it best addresses the requirements stated in the question. Hardware maintenance is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Monitoring network performance\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Installing software on EC2 instances\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Configuring Access Control Lists (ACLs)\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What is the AWS service that provides you the highest level of control over the underlying virtual infrastructure?",
@@ -284,7 +458,13 @@
       "Amazon EC2",
       "Amazon RDS"
     ],
-    "correctAnswer": "Amazon EC2"
+    "correctAnswer": "Amazon EC2",
+    "explanation": {
+      "whyCorrect": "Amazon EC2 is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon Redshift\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon DynamoDB\" is incorrect because fully managed nosql database service., which does not match the requirements. \"Amazon RDS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What are the default security credentials that are required to access the AWS management console for an IAM user account?",
@@ -294,12 +474,24 @@
       "A user name and password",
       "Access keys"
     ],
-    "correctAnswer": "A user name and password"
+    "correctAnswer": "A user name and password",
+    "explanation": {
+      "whyCorrect": "A user name and password is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"MFA\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Security tokens\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Access keys\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "In your on-premises environment, you can create as many virtual servers as you need from a single template. What can you use to perform the same in AWS?",
     "options": ["IAM", "An internet gateway", "EBS Snapshot", "AMI"],
-    "correctAnswer": "AMI"
+    "correctAnswer": "AMI",
+    "explanation": {
+      "whyCorrect": "AMI is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"IAM\" is incorrect because collection of iam users that makes it easier to manage permissions for multiple users., which does not match the requirements. \"An internet gateway\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"EBS Snapshot\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What are two advantages of using Cloud Computing over using traditional data centers? (Choose TWO)",
@@ -313,7 +505,13 @@
     "correctAnswer": [
       "Eliminating Single Points of Failure (SPOFs)",
       "Distributed infrastructure"
-    ]
+    ],
+    "explanation": {
+      "whyCorrect": "Eliminating Single Points of Failure (SPOFs) is the correct answer because it best addresses the requirements stated in the question. Distributed infrastructure is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Reserved Compute capacity\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Virtualized compute resources\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Dedicated hosting\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following aspects of security are managed by AWS? (Choose TWO)",
@@ -327,7 +525,13 @@
     "correctAnswer": [
       "Hardware patching",
       "Securing global physical infrastructure"
-    ]
+    ],
+    "explanation": {
+      "whyCorrect": "Hardware patching is the correct answer because it best addresses the requirements stated in the question. Securing global physical infrastructure is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Encryption of EBS volumes\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"VPC security\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Access permissions\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which statement best describes the operational excellence pillar of the AWS Well-Architected Framework?",
@@ -337,7 +541,13 @@
       "The ability to monitor systems and improve supporting processes and procedures",
       "The ability to manage datacenter operations more efficiently"
     ],
-    "correctAnswer": "The ability to monitor systems and improve supporting processes and procedures"
+    "correctAnswer": "The ability to monitor systems and improve supporting processes and procedures",
+    "explanation": {
+      "whyCorrect": "The ability to monitor systems and improve supporting processes and procedures is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"The ability of a system to recover gracefully from failure\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"The efficient use of computing resources to meet requirements\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"The ability to manage datacenter operations more efficiently\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "AWS has created a large number of Edge Locations as part of its Global Infrastructure. Which of the following is NOT a benefit of using Edge Locations?",
@@ -347,7 +557,13 @@
       "Edge locations are used by CloudFront to distribute traffic across multiple instances to reduce latency",
       "Edge locations are used by CloudFront to distribute content to global users with low latency"
     ],
-    "correctAnswer": "Edge locations are used by CloudFront to distribute traffic across multiple instances to reduce latency"
+    "correctAnswer": "Edge locations are used by CloudFront to distribute traffic across multiple instances to reduce latency",
+    "explanation": {
+      "whyCorrect": "Edge locations are used by CloudFront to distribute traffic across multiple instances to reduce latency is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Edge locations are used by CloudFront to cache the most recent responses\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Edge locations are used by CloudFront to improve your end users' experience when uploading files\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Edge locations are used by CloudFront to distribute content to global users with low latency\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What are the change management tools that helps AWS customers audit and monitor all resource changes in their AWS environment? (Choose TWO)",
@@ -358,7 +574,13 @@
       "AWS X-Ray",
       "AWS Config"
     ],
-    "correctAnswer": ["AWS CloudTrail", "AWS Config"]
+    "correctAnswer": ["AWS CloudTrail", "AWS Config"],
+    "explanation": {
+      "whyCorrect": "AWS CloudTrail is correct: Service that logs API calls and enables auditing, compliance, and security analysis. AWS Config is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon Comprehend\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Transit Gateway\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS X-Ray\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following services allows you to run containerized applications on a cluster of EC2 instances?",
@@ -368,7 +590,13 @@
       "AWS Cloud9",
       "AWS Personal Health Dashboard"
     ],
-    "correctAnswer": "Amazon ECS"
+    "correctAnswer": "Amazon ECS",
+    "explanation": {
+      "whyCorrect": "Amazon ECS is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS Data Pipeline\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Cloud9\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Personal Health Dashboard\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following services will help businesses ensure compliance in AWS?",
@@ -378,7 +606,13 @@
       "CloudWatch",
       "CloudTrail"
     ],
-    "correctAnswer": "CloudTrail"
+    "correctAnswer": "CloudTrail",
+    "explanation": {
+      "whyCorrect": "CloudTrail is correct: Service that logs API calls and enables auditing, compliance, and security analysis.",
+      "whyOthersWrong": "\"CloudFront\" is incorrect because content delivery network (cdn) service that delivers data, videos, applications, and apis to customers globally., which does not match the requirements. \"CloudEndure Migration\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"CloudWatch\" is incorrect because monitoring and observability service for aws resources and applications., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following procedures will help reduce your Amazon S3 costs?",
@@ -388,7 +622,13 @@
       "Pick the right Availability Zone for your S3 bucket",
       "Move all the data stored in S3 standard to EBS"
     ],
-    "correctAnswer": "Use the right combination of storage classes based on different use cases"
+    "correctAnswer": "Use the right combination of storage classes based on different use cases",
+    "explanation": {
+      "whyCorrect": "Use the right combination of storage classes based on different use cases is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Use the Import/Export feature to move old files automatically to Amazon Glacier\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Pick the right Availability Zone for your S3 bucket\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Move all the data stored in S3 standard to EBS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What are the AWS services/features that can help you maintain a highly available and fault-tolerant architecture in AWS? (Choose TWO)",
@@ -399,7 +639,13 @@
       "CloudFormation",
       "Network ACLs"
     ],
-    "correctAnswer": ["Amazon EC2 Auto Scaling", "Elastic Load Balancer"]
+    "correctAnswer": ["Amazon EC2 Auto Scaling", "Elastic Load Balancer"],
+    "explanation": {
+      "whyCorrect": "Amazon EC2 Auto Scaling is correct: Service that automatically adjusts capacity to maintain steady, predictable performance. Elastic Load Balancer is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS Direct Connect\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"CloudFormation\" is incorrect because service that helps you model and set up aws resources using infrastructure as code., which does not match the requirements. \"Network ACLs\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following activities may help reduce your AWS monthly costs?",
@@ -409,7 +655,13 @@
       "Removing all of your Cost Allocation Tags",
       "Deploying your AWS resources across multiple Availability Zones"
     ],
-    "correctAnswer": "Enabling Amazon EC2 Auto Scaling for all of your workloads"
+    "correctAnswer": "Enabling Amazon EC2 Auto Scaling for all of your workloads",
+    "explanation": {
+      "whyCorrect": "Enabling Amazon EC2 Auto Scaling for all of your workloads is correct: Service that automatically adjusts capacity to maintain steady, predictable performance.",
+      "whyOthersWrong": "\"Using the AWS Network Load Balancer (NLB) to load balance the incoming HTTP requests\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Removing all of your Cost Allocation Tags\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Deploying your AWS resources across multiple Availability Zones\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What is the AWS service/feature that takes advantage of Amazon CloudFront's globally distributed edge locations to transfer files to S3 with higher upload speeds?",
@@ -419,12 +671,24 @@
       "AWS Snowmobile",
       "AWS Snowball"
     ],
-    "correctAnswer": "S3 Transfer Acceleration"
+    "correctAnswer": "S3 Transfer Acceleration",
+    "explanation": {
+      "whyCorrect": "S3 Transfer Acceleration is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS WAF\" is incorrect because web application firewall that helps protect web applications from common web exploits., which does not match the requirements. \"AWS Snowmobile\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Snowball\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which of the following AWS security features is associated with an EC2 instance and functions to filter incoming traffic requests?",
     "options": ["AWS X-Ray", "Network ACL", "Security Groups", "VPC Flow logs"],
-    "correctAnswer": "Security Groups"
+    "correctAnswer": "Security Groups",
+    "explanation": {
+      "whyCorrect": "Security Groups is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS X-Ray\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Network ACL\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"VPC Flow logs\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Which AWS services can be used to improve the performance of a global application and reduce latency for its users? (Choose TWO)",
@@ -435,7 +699,13 @@
       "AWS Glue",
       "Amazon CloudFront"
     ],
-    "correctAnswer": ["AWS Global accelerator", "Amazon CloudFront"]
+    "correctAnswer": ["AWS Global accelerator", "Amazon CloudFront"],
+    "explanation": {
+      "whyCorrect": "AWS Global accelerator is the correct answer because it best addresses the requirements stated in the question. Amazon CloudFront is correct: Content delivery network (CDN) service that delivers data, videos, applications, and APIs to customers globally.",
+      "whyOthersWrong": "\"AWS KMS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Direct Connect\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Glue\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Using Amazon RDS falls under the shared responsibility model. Which of the following are customer responsibilities? (Choose TWO)",
@@ -449,7 +719,13 @@
     "correctAnswer": [
       "Building the relational database schema",
       "Managing the database settings"
-    ]
+    ],
+    "explanation": {
+      "whyCorrect": "Building the relational database schema is the correct answer because it best addresses the requirements stated in the question. Managing the database settings is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Performing backups\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Patching the database software\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Installing the database software\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "A company has a large amount of structured data stored in their on-premises data center. They are planning to migrate all the data to AWS, what is the most appropriate AWS database option?",
@@ -459,7 +735,13 @@
       "Amazon RDS",
       "Amazon ElastiCache"
     ],
-    "correctAnswer": "Amazon RDS"
+    "correctAnswer": "Amazon RDS",
+    "explanation": {
+      "whyCorrect": "Amazon RDS is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon DynamoDB\" is incorrect because fully managed nosql database service., which does not match the requirements. \"Amazon SNS\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon ElastiCache\" is incorrect because in-memory caching service to improve application performance., which does not match the requirements.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "A company has created a solution that helps AWS customers improve their architectures on AWS. Which AWS program may support this company?",
@@ -469,7 +751,13 @@
       "APN Technology Partners",
       "AWS Professional Services"
     ],
-    "correctAnswer": "APN Consulting Partners"
+    "correctAnswer": "APN Consulting Partners",
+    "explanation": {
+      "whyCorrect": "APN Consulting Partners is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"AWS TAM\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"APN Technology Partners\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"AWS Professional Services\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "What is the AWS serverless service that allows you to run your applications without any administrative burden?",
@@ -479,7 +767,13 @@
       "Amazon RDS instances",
       "Amazon EC2 instances"
     ],
-    "correctAnswer": "AWS Lambda"
+    "correctAnswer": "AWS Lambda",
+    "explanation": {
+      "whyCorrect": "AWS Lambda is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"Amazon LightSail\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon RDS instances\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"Amazon EC2 instances\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   },
   {
     "question": "Jessica is managing an e-commerce web application in AWS. The application is hosted on six EC2 instances. One day, three of the instances crashed; but none of her customers were affected. What has Jessica done correctly in this scenario?",
@@ -489,6 +783,12 @@
       "She has properly built an encrypted system",
       "She has properly built a scalable system"
     ],
-    "correctAnswer": "She has properly built a fault tolerant system"
+    "correctAnswer": "She has properly built a fault tolerant system",
+    "explanation": {
+      "whyCorrect": "She has properly built a fault tolerant system is the correct answer because it best addresses the requirements stated in the question.",
+      "whyOthersWrong": "\"She has properly built an elastic system\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"She has properly built an encrypted system\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario. \"She has properly built a scalable system\" is incorrect because it does not address the question requirements or is not the appropriate solution for this scenario.",
+      "additionalPoints": "This question tests your understanding of AWS services, concepts, and best practices. Key concepts to review include: AWS service use cases, architectural patterns, cost optimization strategies, and security best practices. Make sure to understand the differences between similar services and when to use each one.",
+      "bestPractices": "AWS best practices to remember: (1) Always design for failure and implement high availability across multiple Availability Zones or Regions, (2) Implement the principle of least privilege for security, (3) Use managed services when possible to reduce operational overhead, (4) Monitor costs and set up billing alerts, and (5) Follow the AWS Well-Architected Framework principles."
+    }
   }
 ]

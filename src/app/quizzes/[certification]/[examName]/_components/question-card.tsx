@@ -9,10 +9,10 @@ import {
   Loader,
 } from "@/components/ui";
 import { Question } from "@/types";
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { AIHelp } from "./ai-help";
 import { Options } from "./options";
 import { SelectedOptions } from "./types";
-import { AIHelp } from "./ai-help";
 
 export const QuestionCard = ({
   question,
@@ -54,7 +54,9 @@ export const QuestionCard = ({
     >
       <CardHeader>
         <CardTitle>
-          <H4>{questionNumber}. {question.question}</H4>
+          <H4>
+            {questionNumber}. {question.question}
+          </H4>
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
@@ -78,13 +80,7 @@ export const QuestionCard = ({
               }
               isSubmitted={isSubmitted}
             />
-            {isSubmitted && (
-              <AIHelp
-                question={question}
-                selectedOptions={selectedOptions}
-                isCorrect={isCorrect}
-              />
-            )}
+            {isSubmitted && <AIHelp question={question} />}
           </>
         )}
       </CardContent>
