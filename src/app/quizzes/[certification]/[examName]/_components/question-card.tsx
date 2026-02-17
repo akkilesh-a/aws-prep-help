@@ -33,7 +33,7 @@ export const QuestionCard = ({
   useEffect(() => {
     setShuffledOptions([...question.options].sort(() => Math.random() - 0.5));
     setIsOptionsLoading(false);
-  }, [question.question]);
+  }, [question.options, question.question]);
 
   const currentSelection = selectedOptions.find(
     (opt) => opt.question === question.question

@@ -37,10 +37,8 @@ const QuizesPage = async ({
       <H1>{certificationName}</H1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {quizzes.map(async (quiz) => {
-          const quizFile = quiz.replace(/ /g, "-").toLocaleLowerCase();
           const quizLength = await getCertificationQuizDetails(
-            certificationFolder,
-            quizFile
+            certificationFolder
           );
           return (
             <QuizCard

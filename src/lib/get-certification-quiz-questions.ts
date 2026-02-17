@@ -16,7 +16,7 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 export const getCertificationQuizQuestions = async (
   certification: string,
   quiz: string
-) => {
+): Promise<Question[]> => {
   const certificationFolder = path.join(
     process.cwd(),
     `src/data/${certification}`
@@ -48,14 +48,14 @@ export const getCertificationQuizQuestions = async (
     // Create a Set of unique identifiers from quizData for deduplication
     const quizDataIds = new Set<string>();
     quizData.forEach((q: Question) => {
-      const key = (q as any).id || q.question.toLowerCase().trim();
+      const key = q.question.toLowerCase().trim();
       quizDataIds.add(key);
     });
     
     // Deduplicate otherQuestions against quizData and within themselves
     const seenOtherKeys = new Set<string>();
     const uniqueOtherQuestions = otherQuestions.filter((q: Question) => {
-      const key = (q as any).id || q.question.toLowerCase().trim();
+      const key = q.question.toLowerCase().trim();
       // Skip if already in quizData or already seen in otherQuestions
       if (quizDataIds.has(key) || seenOtherKeys.has(key)) {
         return false;

@@ -6,8 +6,7 @@ export const MIN_QUIZ_LENGTH = 65;
 
 // Get the length of a quiz
 export const getCertificationQuizDetails = async (
-  certification: string,
-  quiz: string
+  certification: string
 ) => {
   const certificationFolder = path.join(
     process.cwd(),
