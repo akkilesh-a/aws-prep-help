@@ -141,7 +141,7 @@ export const Quiz = ({ questions }: { questions: Question[] }) => {
 
   // Save state helper function for use in event listeners
   const saveState = useCallback(() => {
-    if (typeof window === "undefined") return;
+    if (typeof window === "undefined" || !isStateRestored) return;
 
     const stateToPersist: PersistedQuizState = {
       selectedOptions,
@@ -152,7 +152,7 @@ export const Quiz = ({ questions }: { questions: Question[] }) => {
     };
 
     localStorage.setItem(storageKey, JSON.stringify(stateToPersist));
-  }, [selectedOptions, isSubmitted, score, storageKey, orderedQuestions]);
+  }, [isStateRestored, selectedOptions, isSubmitted, score, storageKey, orderedQuestions]);
 
   const handleSubmit = useCallback(() => {
     if (isSubmitted) return;
