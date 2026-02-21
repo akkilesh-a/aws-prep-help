@@ -19,12 +19,14 @@ export const QuestionCard = ({
   selectedOptions,
   handleSetSelectedOptions,
   isSubmitted,
+  isPaused,
   questionNumber,
 }: {
   question: Question;
   selectedOptions: SelectedOptions[];
   handleSetSelectedOptions: (value: SelectedOptions) => void;
   isSubmitted: boolean;
+  isPaused: boolean;
   questionNumber: number;
 }) => {
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
@@ -79,6 +81,7 @@ export const QuestionCard = ({
                 })
               }
               isSubmitted={isSubmitted}
+              isDisabled={isSubmitted || isPaused}
             />
             {isSubmitted && <AIHelp question={question} />}
           </>

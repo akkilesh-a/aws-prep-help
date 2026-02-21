@@ -13,6 +13,7 @@ interface OptionsProps {
   selectedOptions: string[];
   handleSetSelectedOptions: (options: string[]) => void;
   isSubmitted: boolean;
+  isDisabled: boolean;
 }
 
 export const Options = ({
@@ -21,6 +22,7 @@ export const Options = ({
   selectedOptions,
   handleSetSelectedOptions,
   isSubmitted,
+  isDisabled,
 }: OptionsProps) => {
   const isMultipleChoice = Array.isArray(correctAnswer);
 
@@ -54,8 +56,8 @@ export const Options = ({
             <Checkbox
               id={option}
               checked={isOptionSelected(option)}
-              onCheckedChange={() => !isSubmitted && handleOptionChange(option)}
-              disabled={isSubmitted}
+              onCheckedChange={() => !isDisabled && handleOptionChange(option)}
+              disabled={isDisabled}
               className="rounded"
             />
             <Label
@@ -75,8 +77,8 @@ export const Options = ({
       ) : (
         <RadioGroup
           value={selectedOptions[0]}
-          onValueChange={(value) => !isSubmitted && handleOptionChange(value)}
-          disabled={isSubmitted}
+          onValueChange={(value) => !isDisabled && handleOptionChange(value)}
+          disabled={isDisabled}
         >
           {options.map((option) => (
             <div key={option} className="flex items-center space-x-2">
