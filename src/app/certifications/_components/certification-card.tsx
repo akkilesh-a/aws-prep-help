@@ -45,34 +45,38 @@ export const CertificationCard = ({
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    let attemptedCount = 0;
+    try {
+      let attemptedCount = 0;
 
-    for (let index = 0; index < localStorage.length; index++) {
-      const key = localStorage.key(index);
-      if (!key || !key.startsWith(storagePrefix)) {
-        continue;
-      }
-
-      try {
-        const rawState = localStorage.getItem(key);
-        if (!rawState) {
+      for (let index = 0; index < localStorage.length; index++) {
+        const key = localStorage.key(index);
+        if (!key || !key.startsWith(storagePrefix)) {
           continue;
         }
 
-        const parsedState = JSON.parse(rawState) as PersistedQuizState;
-        const hasSelections =
-          Array.isArray(parsedState.selectedOptions) &&
-          parsedState.selectedOptions.length > 0;
+        try {
+          const rawState = localStorage.getItem(key);
+          if (!rawState) {
+            continue;
+          }
 
-        if (hasSelections || parsedState.isSubmitted) {
-          attemptedCount += 1;
+          const parsedState = JSON.parse(rawState) as PersistedQuizState;
+          const hasSelections =
+            Array.isArray(parsedState.selectedOptions) &&
+            parsedState.selectedOptions.length > 0;
+
+          if (hasSelections || parsedState.isSubmitted) {
+            attemptedCount += 1;
+          }
+        } catch {
+          // Ignore malformed localStorage entries
         }
-      } catch {
-        // Ignore malformed localStorage entries
       }
-    }
 
-    setAttemptedQuizzes(Math.min(attemptedCount, quizes));
+      setAttemptedQuizzes(Math.min(attemptedCount, quizes));
+    } catch {
+      setAttemptedQuizzes(0);
+    }
   }, [quizes, storagePrefix]);
 
   return (
