@@ -286,6 +286,16 @@ export const Quiz = ({ questions }: { questions: Question[] }) => {
 
   return (
     <div className="space-y-4">
+      {isPaused && !isSubmitted && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/60 backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-3 rounded-lg border bg-background px-6 py-5 shadow-sm">
+            <p className="text-base font-semibold">Quiz is paused</p>
+            <Button onClick={handleTogglePause} size="sm">
+              Resume
+            </Button>
+          </div>
+        </div>
+      )}
       <div className="sr-only" aria-live="assertive" aria-atomic="true">
         {timerAnnouncement}
       </div>
@@ -332,35 +342,37 @@ export const Quiz = ({ questions }: { questions: Question[] }) => {
           </Button>
         </div>
       </div>
-      {orderedQuestions.map((question: Question, index: number) => (
-        <QuestionCard
-          key={question.question}
-          selectedOptions={selectedOptions}
-          handleSetSelectedOptions={handleSetSelectedOptions}
-          question={question}
-          isSubmitted={isSubmitted}
-          isPaused={isPaused}
-          questionNumber={index + 1}
-        />
-      ))}
-      {!isSubmitted && (
-        <div className="flex justify-center">
-          <Button className="w-96 h-10 text-md" onClick={handleSubmit} disabled={isPaused}>
-            Submit
-          </Button>
-        </div>
-      )}
-      {isSubmitted && (
-        <div className="text-center p-4 bg-primary/10 rounded-lg">
-          <H1>
-            Score: <span className="text-primary">{score}</span>/
-            {orderedQuestions.length}
-          </H1>
-          {timeLeft === 0 && (
-            <p className="mt-2 text-sm font-medium">Time is up.</p>
-          )}
-        </div>
-      )}
+      <div className="space-y-4">
+        {orderedQuestions.map((question: Question, index: number) => (
+          <QuestionCard
+            key={question.question}
+            selectedOptions={selectedOptions}
+            handleSetSelectedOptions={handleSetSelectedOptions}
+            question={question}
+            isSubmitted={isSubmitted}
+            isPaused={isPaused}
+            questionNumber={index + 1}
+          />
+        ))}
+        {!isSubmitted && (
+          <div className="flex justify-center">
+            <Button className="w-96 h-10 text-md" onClick={handleSubmit} disabled={isPaused}>
+              Submit
+            </Button>
+          </div>
+        )}
+        {isSubmitted && (
+          <div className="text-center p-4 bg-primary/10 rounded-lg">
+            <H1>
+              Score: <span className="text-primary">{score}</span>/
+              {orderedQuestions.length}
+            </H1>
+            {timeLeft === 0 && (
+              <p className="mt-2 text-sm font-medium">Time is up.</p>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
