@@ -14,11 +14,15 @@ AWS Prep Help is a modern web app designed to help you ace your AWS certificatio
 
 ## ✨ Features
 
-- **AI-Powered Explanations:** Get detailed, context-aware explanations for every question using advanced AI (Google Gemini).
-- **Instant Feedback:** See immediately if your answer is correct and understand why.
-- **Flexible Learning:** Study at your own pace, anytime, anywhere.
+- **90-Minute Exam Timer:** Each quiz runs with a full 90-minute countdown and auto-submits when time is up.
+- **Pause & Resume Control:** Pause button freezes the timer and interactions, with a full-screen paused state and centered Resume action.
+- **Minimum 65 Questions per Quiz:** Quizzes are normalized to at least 65 questions by adding unique questions when needed.
+- **AI-Powered Explanations:** View detailed explanations after submission, including why answers are correct and why others are wrong.
+- **Instant Result Validation:** Submitted answers are checked immediately with clear correctness feedback.
+- **Progress Tracking UI:** Live answered/total progress indicator and score summary at completion.
+- **Session Persistence:** Answers, timer state, pause state, score, and question order are saved and restored via local storage.
+- **Flexible Learning:** Study at your own pace with certification-wise exam selection.
 - **Beautiful UI:** Responsive, animated, and easy to use.
-- **Performance Tracking:** Identify strengths and areas for improvement.
 
 ## 📚 Supported Certifications
 
