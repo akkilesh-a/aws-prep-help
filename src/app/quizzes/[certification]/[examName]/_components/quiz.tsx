@@ -286,7 +286,7 @@ export const Quiz = ({ questions }: { questions: Question[] }) => {
 
   return (
     <div className="space-y-4">
-      {isPaused && (
+      {isPaused && !isSubmitted && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/60 backdrop-blur-sm">
           <div className="flex flex-col items-center gap-3 rounded-lg border bg-background px-6 py-5 shadow-sm">
             <p className="text-base font-semibold">Quiz is paused</p>
